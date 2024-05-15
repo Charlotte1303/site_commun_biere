@@ -1,0 +1,139 @@
+body {
+    font-family: 'Roboto-Bold', sans-serif; /* Changement de la police de caractères */
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-rows: auto auto auto; /* Ajout des lignes de grille pour le header, le contenu et le footer */
+    grid-template-columns: 1fr 1fr; /* Deux colonnes pour le contenu */
+    min-height: 100vh; /* Pour assurer que la grille s'étend sur toute la hauteur de la fenêtre */
+}
+
+header {
+    grid-row: 1; /* Positionne le header sur la première ligne de la grille */
+    grid-column: 1 / span 2; /* Le header s'étend sur les deux colonnes */
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    margin: 30px;
+    position: relative;
+}
+
+header img {
+    max-width: 100px;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu ul li {
+    margin-left: 20px;
+    transition: transform 0.3s ease; /* Ajoute une transition au survol */
+}
+
+.menu ul li:hover {
+    transform: translateY(-5px); /* Déplace légèrement l'élément vers le haut au survol */
+}
+
+.menu ul li a {
+    text-decoration: none; /* Supprime la décoration des liens */
+    color: white;
+}
+
+.titre {
+    grid-column: 1 / span 2;
+    text-align: center;
+    padding: 20px;
+}
+
+.gauche, .droite {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+}
+
+.gauche {
+    grid-column: 1; /* Section gauche dans la première colonne */
+}
+
+.droite {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    font-weight: normal; /* Enlève le style en gras */
+    font-size: large;
+    justify-content: space-between;
+}
+
+.insta a{
+    list-style-type: none;
+    text-decoration: none; /* Supprime la décoration des liens */
+    color: white;
+    margin: 18px 0px;
+}
+
+.form {
+    grid-column: 1 / span 2; /* Formulaire de contact s'étend sur les deux colonnes */
+    justify-self: center; /* Centrer horizontalement */
+    align-self: center; /* Centrer verticalement */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.form h2{
+    padding: 30px;
+}
+
+form#contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    grid-row: 5; /* Positionne le footer sur la troisième ligne de la grille */
+    grid-column: 1 / span 2; /* Le footer s'étend sur les deux colonnes */
+    text-align: center;
+    padding: 0; /* Réduit la taille du padding du footer */
+    margin-top: 10px; /* Ajoute une marge en haut du footer */
+}
+
+
+/* Création des paillettes */
+.paillette {
+    grid-column: 1 / span 2;
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: #fff; /* Couleur des paillettes */
+    border-radius: 50%; /* Pour rendre les paillettes rondes */
+}
+
+/* Animation des paillettes */
+@keyframes tomber {
+    0% {
+        transform: translateY(-100px) rotate(0deg);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(100vh) rotate(720deg); /* Fait tourner les paillettes en tombant */
+        opacity: 1;
+    }
+}
+
+/* Appliquer l'animation à chaque paillette */
+.paillette {
+    animation: tomber 5s linear infinite; /* Réglez la vitesse et la durée de l'animation selon vos préférences */
+}
