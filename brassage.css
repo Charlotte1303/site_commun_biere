@@ -5,7 +5,7 @@ body {
     background-color: black;
     color: white;
     display: grid;
-    grid-template-rows: auto auto auto; /* Ajout des lignes de grille pour le header, le contenu et le footer */
+    grid-template-rows: 50px auto auto; /* Ajout des lignes de grille pour le header, le contenu et le footer */
     grid-template-columns: 1fr 1fr; /* Deux colonnes pour le contenu */
     min-height: 100vh; /* Pour assurer que la grille s'étend sur toute la hauteur de la fenêtre */
 }
