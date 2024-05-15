@@ -69,13 +69,18 @@ h3 {
     margin-left: 80%; /* Décaler vers la droite  */
 }
 
+
+main {
+    grid-column: 1 / span 2;
+}
+
 .container {
     display: grid;
     grid-template-columns: auto 1fr; /* Définit deux colonnes, une automatique et une flexible */
     grid-template-rows: auto;
     grid-gap: 20px;
     text-align: center;
-    margin-left: 500px; /* Décale le contenu de 30 pixels vers la droite */
+    justify-items: center;
 }
 
 .container > * {
