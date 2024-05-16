@@ -10,13 +10,12 @@ body {
     min-height: 100vh; /* Pour assurer que la grille s'étend sur toute la hauteur de la fenêtre */
 }
 header {
-    grid-row: 1; /* Positionne le header sur la première ligne de la grille */
+    grid-row: 15%; /* Positionne le header sur la première ligne de la grille */
     grid-column: 1 / span 2; /* Le header s'étend sur les deux colonnes */
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
     margin: 10px
-    
 }
 
 header img {
@@ -56,9 +55,6 @@ header ul li .panier{
     padding: 20px;
 }
 
-
-
-
 footer {
     grid-row: 4; /* Positionne le footer sur la troisième ligne de la grille */
     text-align: center;
@@ -77,6 +73,7 @@ footer {
     overflow: hidden;
     position: relative;
     align-items: center;
+    margin-top: 3%;
 }
 .carousel .list .item{
     width: 100%;
