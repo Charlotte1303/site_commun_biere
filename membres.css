@@ -1,0 +1,207 @@
+header {
+    grid-row: 1;
+    /* Positionne le header sur la première ligne de la grille */
+    grid-column: 1 / span 2;
+    /* Le header s'étend sur les deux colonnes */
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    margin: 10px
+}
+
+header img {
+    max-width: 100px;
+}
+
+header ul li .panier {
+    max-width: 40px;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menu ul li {
+    margin-left: 20px;
+    transition: transform 0.3s ease;
+    /* Ajoute une transition au survol */
+}
+
+.menu ul li:hover {
+    transform: translateY(-5px);
+    /* Déplace légèrement l'élément vers le haut au survol */
+}
+
+.menu ul li a {
+    text-decoration: none;
+    /* Supprime la décoration des liens */
+    color: white;
+}
+
+body {
+    font-family: 'Roboto-Bold', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-rows: 50px auto auto;
+    /* Ajout des lignes de grille pour le header, le contenu et le footer */
+    grid-template-columns: 1fr 1fr;
+    /* Deux colonnes pour le contenu */
+    min-height: 100vh;
+    /* Pour assurer que la grille s'étend sur toute la hauteur de la fenêtre */
+}
+
+
+
+body {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    /* Première colonne pour le header et le menu, deuxième colonne pour le contenu */
+    grid-template-rows: 50px auto auto;
+    /* Trois lignes pour le header, le contenu et le footer */
+    min-height: 100vh;
+    /* Hauteur minimale de la grille pour occuper toute la hauteur de la fenêtre */
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('roboto/Roboto-Bold.ttf') format('truetype');
+    /* Ajoutez d'autres formats de police ici si nécessaire */
+}
+
+body {
+    font-family: 'Roboto-Bold', sans-serif;
+}
+
+h2 {
+    font-family: 'Roboto-Bold', sans-serif;
+}
+
+header {
+    grid-row: 1;
+    /* Positionne le header sur la première ligne de la grille */
+    grid-column: 1 / span 2;
+    /* Le header s'étend sur les deux colonnes */
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    margin: 30px;
+    position: relative;
+}
+
+
+main {
+    grid-row: 2;
+    /* Positionne main sur la deuxième ligne */
+    grid-column: 1 / span 2;
+    /* Etend main sur les deux colonnes */
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    align-content: space-between;
+    gap: 0px;
+    /* Espacement entre les éléments */
+}
+
+.titre {
+    grid-column: 1 / span 2;
+    /* Etend le titre sur les deux colonnes */
+    text-align: center;
+    padding: 20px;
+    margin-top: -80px;
+}
+
+.fleche {
+    grid-column: 1;
+    /* Positionne la flèche dans la première colonne */
+    justify-self: start;
+    /* Aligne la flèche à gauche */
+    margin: 80px 30px;
+    /* Marge autour de la flèche */
+    width: 70px;
+    height: auto;
+}
+
+main .profil {
+    display: flex;
+    align-items: center;
+    grid-column: 1 / span 2;
+    justify-content: space-around;
+}
+
+.informations {
+    grid-column: 2;
+    /* Positionne les informations dans la deuxième colonne de la sous-grille */
+    justify-self: start;
+    /* Aligne les informations à gauche */
+    margin-top: 0;
+    /* Supprime la marge en haut des informations */
+    margin-left: 0;
+    /* Réinitialise la marge à gauche des informations */
+}
+
+.profil img {
+    max-width: 70%;
+}
+
+
+
+
+
+/* Création des paillettes */
+.paillette {
+    grid-column: 1 / span 2;
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: #fff;
+    /* Couleur des paillettes */
+    border-radius: 50%;
+    /* Pour rendre les paillettes rondes */
+}
+
+/* Animation des paillettes */
+@keyframes tomber {
+    0% {
+        transform: translateY(-100px) rotate(0deg);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(100vh) rotate(720deg);
+        /* Fait tourner les paillettes en tombant */
+        opacity: 1;
+    }
+}
+
+/* Appliquer l'animation à chaque paillette */
+.paillette {
+    animation: tomber 5s linear infinite;
+    /* Réglez la vitesse et la durée de l'animation selon vos préférences */
+}
+
+
+
+
+
+
+footer {
+    grid-row: 5;
+    /* Positionne le footer sur la troisième ligne de la grille */
+    grid-column: 1 / span 2;
+    /* Le footer s'étend sur les deux colonnes */
+    text-align: center;
+    padding: 0;
+    /* Réduit la taille du padding du footer */
+    margin-top: 10px;
+    /* Ajoute une marge en haut du footer */
+}

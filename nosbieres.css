@@ -5,25 +5,26 @@ body {
     background-color: black;
     color: white;
     display: grid;
-    grid-template-rows: auto auto auto; /* Ajout des lignes de grille pour le header, le contenu et le footer */
-    grid-template-columns: auto auto auto; /* trois colonnes pour le contenu */
-    min-height: 100vh;
-
-    
+    grid-template-rows: 50px auto auto; /* Ajout des lignes de grille pour le header, le contenu et le footer */
+    grid-template-columns: 1fr 1fr; /* Deux colonnes pour le contenu */
+    min-height: 100vh; /* Pour assurer que la grille s'étend sur toute la hauteur de la fenêtre */
 }
-
 header {
     grid-row: 1; /* Positionne le header sur la première ligne de la grille */
-    grid-column: 1 / span 3; /* Le header s'étend sur les deux colonnes */
+    grid-column: 1 / span 2; /* Le header s'étend sur les deux colonnes */
     display: grid;
     grid-template-columns: auto 1fr;
-    /*align-items: center;*/
-    margin: 30px;
-    position: relative;
+    align-items: center;
+    margin: 10px
+    
 }
 
 header img {
     max-width: 100px;
+}
+
+header ul li .panier{
+    max-width: 40px;
 }
 
 .menu ul {
@@ -32,12 +33,12 @@ header img {
     padding: 0;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
 .menu ul li {
     margin-left: 20px;
     transition: transform 0.3s ease; /* Ajoute une transition au survol */
-
 }
 
 .menu ul li:hover {
@@ -49,22 +50,22 @@ header img {
     color: white;
 }
 
-.logo{
-
-    grid-column: 2;
-    display: flex;
-    justify-content: center;
-
+.titre {
+    grid-column: 1 / span 2;
+    text-align: center;
+    padding: 20px;
 }
 
 
+
+
 footer {
-    grid-row: 4; /* Positionne le footer sur la troisième ligne de la grille */
-    grid-column: 2; /* Le footer s'étend sur les deux colonnes */
+    grid-row: 5; /* Positionne le footer sur la troisième ligne de la grille */
+    grid-column: 1 / span 2; /* Le footer s'étend sur les deux colonnes */
     text-align: center;
     padding: 0; /* Réduit la taille du padding du footer */
     margin-top: 10px; /* Ajoute une marge en haut du footer */
+    align-items: end;
     display: flex;
-    align-items: flex-end;
     justify-content: center;
 }
