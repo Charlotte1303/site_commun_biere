@@ -16,12 +16,16 @@ header {
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
-    margin: 30px;
-    position: relative;
+    margin: 10px
+    
 }
 
 header img {
     max-width: 100px;
+}
+
+header ul li .panier{
+    max-width: 40px;
 }
 
 .menu ul {
@@ -30,6 +34,7 @@ header img {
     padding: 0;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
 .menu ul li {

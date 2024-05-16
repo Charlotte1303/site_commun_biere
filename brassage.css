@@ -9,20 +9,22 @@ body {
     grid-template-columns: 1fr 1fr; /* Deux colonnes pour le contenu */
     min-height: 100vh; /* Pour assurer que la grille s'étend sur toute la hauteur de la fenêtre */
 }
-
 header {
     grid-row: 1; /* Positionne le header sur la première ligne de la grille */
     grid-column: 1 / span 2; /* Le header s'étend sur les deux colonnes */
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
-    margin: 30px;
-    position: relative;
-    align-items: start;
+    margin: 10px
+    
 }
 
 header img {
     max-width: 100px;
+}
+
+header ul li .panier{
+    max-width: 40px;
 }
 
 .menu ul {
@@ -31,6 +33,7 @@ header img {
     padding: 0;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
 .menu ul li {
