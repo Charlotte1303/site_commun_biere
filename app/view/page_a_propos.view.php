@@ -50,7 +50,7 @@
         <img src="étoiles.png" alt="étoiles">
         <h2 class="nouveau-titre">QUI SOMMES-NOUS ?</h2>
         <div class="photos">
-            <a href="membres.html"> <img class="photo_profil" src="photo_profil.png" alt="Photo profil 1"></a>
+            <a href="membres.php"> <img class="photo_profil" src="photo_profil.png" alt="Photo profil 1"></a>
             <a href="index.html"> <img class="photo_profil" src="photo_profil.png" alt="Photo profil 2"></a>
             <a href="index.html"><img class="photo_profil" src="photo_profil.png" alt="Photo profil 3"></a>
             <a href="index.html"><img class="photo_profil" src="photo_profil.png" alt="Photo profil 4"></a>

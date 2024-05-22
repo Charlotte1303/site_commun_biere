@@ -39,7 +39,7 @@
 
     <section class="form">
         <h2>Formulaire de Contact</h2>
-        <form id="contactForm" action="confirmation.html" method="post">
+        <form id="contactForm" action="confirmation.php" method="post">
             <label for="nom">Nom:</label><br>
             <input type="text" id="nom" name="nom" required><br>
             <label for="email">Email:</label><br>

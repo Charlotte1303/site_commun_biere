@@ -1,7 +1,7 @@
 
 
     <main>
-        <a href="page_a_propos.html" class="boutonr2"><img class="fleche" src="fleche.png" alt="Flèche"></a>
+        <a href="page_a_propos.php" class="boutonr2"><img class="fleche" src="fleche.png" alt="Flèche"></a>
         <div class="titre">
             <h2>QUI SOMMES-NOUS ?</h2>
         </div>
