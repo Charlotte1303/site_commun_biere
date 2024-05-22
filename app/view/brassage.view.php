@@ -44,8 +44,8 @@
 
 
     <footer>
-        <p>© 2024 Infinité. Tous droits réservés.</p>
+        <?php include 'footer.php'; ?>
     </footer>
-    </body>
-    
-    </html>
+</body>
+
+</html>

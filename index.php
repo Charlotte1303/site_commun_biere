@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title></title>
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="public/css/index.css">
     </head>
 <body>
 
     <header>
-        <a href="app/view/common/index.html"><img class="logo" src="Logo.png"></a>
+        <a href="app/view/common/index.html"><img class="logo" src="public/images/Logo.png"></a>
         <nav class="menu">
             <ul>
                 <li>
