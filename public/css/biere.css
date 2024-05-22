@@ -21,10 +21,8 @@ header img {
 }
 
 .menu ul li {
-  margin-right: 3%;
-  font-size: 1.2em;
-  transition: transform 0.3s ease;
-  /* Ajoute une transition au survol */
+    margin-left: 20px;
+    transition: transform 0.3s ease; /* Ajoute une transition au survol */
 }
 
 .menu ul li:hover {
@@ -94,10 +92,12 @@ body {
 }
 
 .portrait-image {
-  width: 33%;
-  margin-left: 130%;
-  margin-top: -250%;
-}
+    width: 32%;
+    margin-left: 140%;
+    width: 33%;
+    margin-left: 130%;
+    margin-top: -250%;
+  }
 
 footer {
     grid-row: 5; /* Positionne le footer sur la troisième ligne de la grille */
