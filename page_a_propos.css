@@ -27,8 +27,10 @@ header ul li .panier{
 }
 
 .menu ul li {
-    margin-left: 20px;
-    transition: transform 0.3s ease; /* Ajoute une transition au survol */
+    margin-right: 3%;
+    font-size: 1.2em;
+    transition: transform 0.3s ease;
+    /* Ajoute une transition au survol */
 }
 
 .menu ul li:hover {
