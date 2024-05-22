@@ -1,33 +1,3 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/public/css/biere.css">
-    <title>Nos bières</title>
-</head>
-<body>
-<header>
-        <img src="/public/images/Logo.png">
-        <nav class="menu">
-            <ul>
-                <li>
-                    <a href="#">Accueil</a>
-                </li>
-                <li>
-                    <a href="#">A propos</a>
-                </li>
-                <li>
-                    <a href="#">Nos bières</a>
-                </li>
-                <li>
-                    <a href="nous_contacter.html">Contact</a>
-                </li>
-
-            </ul>
-
-        </nav>
-    </header>
 <main> 
 <div class="beer-description">
   <h2>SOUFFLE SICHUANAIS</h2>
@@ -48,8 +18,4 @@
 </div>
 <img src="smartmockups_lt8udws5.png" alt="Beer Portrait" class="portrait-image">
 </main>
-<footer>
-        <p>© 2024 Infinité. Tous droits réservés.</p>
-    </footer>
-</body>
-</html>
+

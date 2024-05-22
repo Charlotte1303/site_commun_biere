@@ -1,12 +1,12 @@
 <?php
 //1 Données
-$title = "biere";
-$css = "biere.css";
+$title = "brassage";
+$css = "brassage.css";
 
 //2 Générer Vue
-$currentPage = 'biere';
+$currentPage = 'brassage';
 ob_start();
-include 'app/view/biere.view.php';
+include 'app/view/brassage.view.php';
 $content = ob_get_clean();
 
 //3 inclure le layout

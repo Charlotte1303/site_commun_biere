@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Confirmation</title>
-    <link rel="stylesheet" href="confirmation.css">
-</head>
 
 <body>
 
@@ -37,10 +28,3 @@
     <div class="paillette" style="left: 50%; animation-delay: 4s;"></div>
     <div class="paillette" style="right: 25%; animation-delay: 4.5s;"></div>
 
-    <footer>
-        <p>© 2024 Infinité. Tous droits réservés.</p>
-    </footer>
-
-</body>
-
-</html>

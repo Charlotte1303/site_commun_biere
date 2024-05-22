@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="fr">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ma Page de Site</title>
-    <link rel="stylesheet" href="page_a_propos.css">
     <style>
         /* Importer la police depuis une source externe ou localement */
         @font-face {
@@ -44,34 +37,6 @@
         }
     </style>
 </head>
-
-<header>
-    <a href="index.html"><img class="logo" src="Logo.png"></a>
-    <nav class="menu">
-        <ul>
-            <li>
-                <a href="index.html">Accueil</a>
-            </li>
-            <li>
-                <a href="page_a_propos.html">A propos</a>
-            </li>
-            <li>
-                <a href="page_nos_bieres.html">Nos bières</a>
-            </li>
-            <li>
-                <a href="brassage.html">Brassage</a>
-            </li>
-            <li>
-                <a href="nous_contacter.html">Contact</a>
-            </li>
-            <li>
-                <a href=""><img class="panier" src="Panier_logo.png"></a>
-            </li>
-
-        </ul>
-
-    </nav>
-</header>
 
 <main>
     <section class="container">
@@ -120,9 +85,3 @@
 <div class="paillette" style="right: 20%; animation-delay: 3.5s;"></div>
 <div class="paillette" style="left: 50%; animation-delay: 4s;"></div>
 <div class="paillette" style="right: 25%; animation-delay: 4.5s;"></div>
-<footer>
-    <p>© 2024 Infinité. Tous droits réservés.</p>
-</footer>
-</body>
-
-</html>
