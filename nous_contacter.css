@@ -59,12 +59,12 @@ header ul li .panier{
     padding: 20px;
 }
 
-.gauche, .droite {
+.gauche {
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    align-content: center;
+    align-content: flex-end;
 }
 
 .gauche {
@@ -76,7 +76,7 @@ header ul li .panier{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    align-content: center;
+    align-content: flex-start;
     font-weight: normal; /* Enlève le style en gras */
     font-size: large;
     justify-content: space-between;
@@ -87,6 +87,10 @@ header ul li .panier{
     text-decoration: none; /* Supprime la décoration des liens */
     color: white;
     margin: 18px 0px;
+}
+
+.insta {
+    padding-top: 3%;
 }
 
 .form {
