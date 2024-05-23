@@ -7,9 +7,9 @@ require_once 'app/model/connexionBDD.php';
 //2 Générer Vue
 $currentPage = 'biere1';
 ob_start();
-include 'app/view/biere1.view.php';
+include 'app\view\biere1.view.php';
 $content = ob_get_clean();
 
 //3 inclure le layout
 
-include 'app/view/common/layout.php';  
+include 'app/view/common/layout.php';
