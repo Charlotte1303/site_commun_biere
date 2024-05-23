@@ -2,6 +2,7 @@
 //1 Données
 $title = "accueil";
 $css = "index.css";
+require_once 'app/model/connexionBDD.php';
 
 //2 Générer Vue
 $currentPage = 'accueil';

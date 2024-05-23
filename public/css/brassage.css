@@ -68,9 +68,6 @@ header .logo{
     padding: 20px;
 }
 
-
-
-
 footer {
     grid-row: 5; /* Positionne le footer sur la troisième ligne de la grille */
     grid-column: 1 / span 2; /* Le footer s'étend sur les deux colonnes */
