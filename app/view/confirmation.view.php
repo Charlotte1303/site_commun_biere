@@ -4,7 +4,7 @@
     <section class="message">
         <h1>Merci !</h1>
         <p>Votre message a été envoyé avec succès.</p>
-        <img src="Logo.png">
+        <img src="public/images/Logo.png">
     </section>
 
     <div class="paillette" style="left: 10%; animation-delay: 0.5s;"></div>

@@ -47,20 +47,20 @@
             uniques et ensorcelantes, nos bières vous invitent à <br>un
             voyage gustatif et imaginaire sans limite.
         </h3>
-        <img src="étoiles.png" alt="étoiles">
+        <img src="public/images/étoiles.png" alt="étoiles">
         <h2 class="nouveau-titre">QUI SOMMES-NOUS ?</h2>
         <div class="photos">
-            <a href="membres.php"> <img class="photo_profil" src="photo_profil.png" alt="Photo profil 1"></a>
-            <a href="index.html"> <img class="photo_profil" src="photo_profil.png" alt="Photo profil 2"></a>
-            <a href="index.html"><img class="photo_profil" src="photo_profil.png" alt="Photo profil 3"></a>
-            <a href="index.html"><img class="photo_profil" src="photo_profil.png" alt="Photo profil 4"></a>
-            <a href="index.html"><img class="photo_profil" src="photo_profil.png" alt="Photo profil 5"></a>
+            <a href="membres.php"> <img class="photo_profil" src="public/images/photo_profil.png" alt="Photo profil 1"></a>
+            <a href="index.html"> <img class="photo_profil" src="public/images/photo_profil.png" alt="Photo profil 2"></a>
+            <a href="index.html"><img class="photo_profil" src="public/images/photo_profil.png" alt="Photo profil 3"></a>
+            <a href="index.html"><img class="photo_profil" src="public/images/photo_profil.png" alt="Photo profil 4"></a>
+            <a href="index.html"><img class="photo_profil" src="public/images/photo_profil.png" alt="Photo profil 5"></a>
         </div>
         <div class="nouvelle_photo">
-            <a href="index.html"><img class="photo_profil" src="photo_profil.png" alt="Photo profil 6"></a>
-            <a href="index.html"><img class="nouvelle_photo" src="photo_profil.png" alt="Photo profil 7"></a>
-            <a href="index.html"><img class="nouvelle_photo" src="photo_profil.png" alt="Photo profil 8"></a>
-            <a href="index.html"><img class="nouvelle_photo" src="photo_profil.png" alt="Photo profil 9"></a>
+            <a href="index.html"><img class="photo_profil" src="public/images/photo_profil.png" alt="Photo profil 6"></a>
+            <a href="index.html"><img class="nouvelle_photo" src="public/images/photo_profil.png" alt="Photo profil 7"></a>
+            <a href="index.html"><img class="nouvelle_photo" src="public/images/photo_profil.png" alt="Photo profil 8"></a>
+            <a href="index.html"><img class="nouvelle_photo" src="public/images/photo_profil.png" alt="Photo profil 9"></a>
             <video class="video_backstage" src="video_backstage.mp4" controls></video>
         </div>
     </section>

@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title></title>
-        <link rel="stylesheet" href="public/css/index.css">
+        <title><?=$title ?></title>
+        <link rel="stylesheet" href="public/css/<?=$css ?>">
     </head>
 <body>
 
@@ -28,7 +28,7 @@
                     <a href="nous_contacter.php">Contact</a>
                 </li>
                 <li>
-                    <a href=""><img class="panier" src="/public/images/Panier_logo.png"></a>
+                    <a href=""><img class="panier" src="public/images/Panier_logo.png"></a>
                 </li>
 
             </ul>

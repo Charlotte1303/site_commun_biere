@@ -5,7 +5,7 @@
             <!-- list item -->
             <div class="list">
                 <div class="item">
-                    <img src="mockuprougeredimensionne.png">
+                    <img src="public/images/mockuprougeredimensionne.png">
                     <div class="content">
                         <div class="author">BIERE COMMUNE</div>
                         <div class="title">SOUFFLE SICHUANAIS</div>
@@ -21,7 +21,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <img src="mockuporangeredimensionne.png">
+                    <img src="public/images/mockuporangeredimensionne.png">
                     <div class="content">
                         <div class="author">BIERE DERIVEE</div>
                         <div class="title">VENIN SUCRE</div>
@@ -36,7 +36,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <img src="mockupbleuredimensionne.png">
+                    <img src="public/images/mockupbleuredimensionne.png">
                     <div class="content">
                         <div class="author">BIERE DERIVEE</div>
                         <div class="title">PAVOT ABYSSAL</div>
@@ -51,7 +51,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <img src="mockupvertredimensionne.png">
+                    <img src="public/images/mockupvertredimensionne.png">
                     <div class="content">
                         <div class="author">BIERE DERIVEE</div>
                         <div class="title">MENTHE CELESTE</div>
@@ -66,7 +66,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <img src="mockupvioletredimensionne.png">
+                    <img src="public/images/mockupvioletredimensionne.png">
                     <div class="content">
                         <div class="author">BIERE DERIVEE</div>
                         <div class="title">LAVANDE COSMIQUE</div>
@@ -81,7 +81,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <img src="mockupjauneredimensionne.png">
+                    <img src="public/images/mockupjauneredimensionne.png">
                     <div class="content">
                         <div class="author">BIERE DERIVEE</div>
                         <div class="title">SOLEIL ARDENT</div>
@@ -99,32 +99,32 @@
             <!-- list thumnail -->
             <div class="thumbnail">
                 <div class="item">
-                    <img src="phoenix.png">
+                    <img src="public/images/phoenix.png">
                     <div class="content">
                     </div>
                 </div>
                 <div class="item">
-                    <img src="serpent.png">
+                    <img src="public/images/serpent.png">
                     <div class="content">
                     </div>
                 </div>
                 <div class="item">
-                    <img src="leviathan.png">
+                    <img src="public/images/leviathan.png">
                     <div class="content">
                     </div>
                 </div>
                 <div class="item">
-                    <img src="pegase.png">
+                    <img src="public/images/pegase.png">
                     <div class="content">
                     </div>
                 </div>
                 <div class="item">
-                    <img src="ours.png">
+                    <img src="public/images/ours.png">
                     <div class="content">
                     </div>
                 </div>
                 <div class="item">
-                    <img src="sable.png">
+                    <img src="public/images/sable.png">
                     <div class="content">
                     </div>
                 </div>
