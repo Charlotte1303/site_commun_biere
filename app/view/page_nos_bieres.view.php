@@ -16,7 +16,7 @@
                     </div> -->
                         <div class="buttons">
                             <button>EN SAVOIR PLUS</button>
-                            <button>ACHETER</button>
+                            <button><a href="app/view/biere1.view.php">ACHETER</a></button>
                         </div>
                     </div>
                 </div>
@@ -31,7 +31,7 @@
                     </div>-->
                         <div class="buttons">
                             <button>EN SAVOIR PLUS</button>
-                            <button>ACHETER</button>
+                            <button><a href="biere6.view.php">ACHETER</a></button>
                         </div>
                     </div>
                 </div>
@@ -46,7 +46,7 @@
                     </div>-->
                         <div class="buttons">
                             <button>EN SAVOIR PLUS</button>
-                            <button>ACHETER</button>
+                            <button><a href="app/view/biere2.view.php">ACHETER</a></button>
                         </div>
                     </div>
                 </div>
@@ -61,7 +61,7 @@
                     </div>-->
                         <div class="buttons">
                             <button>EN SAVOIR PLUS</button>
-                            <button>ACHETER</button>
+                            <button><a href="biere4.view.php">ACHETER</a></button>
                         </div>
                     </div>
                 </div>
@@ -76,7 +76,7 @@
                     </div>-->
                         <div class="buttons">
                             <button>EN SAVOIR PLUS</button>
-                            <button>ACHETER</button>
+                            <button><a href="biere3.view.php">ACHETER</a></button>
                         </div>
                     </div>
                 </div>
@@ -91,7 +91,7 @@
                     </div>-->
                         <div class="buttons">
                             <button>EN SAVOIR PLUS</button>
-                            <button>ACHETER</button>
+                            <button><a href="biere5.view.php">ACHETER</a></button>
                         </div>
                     </div>
                 </div>
