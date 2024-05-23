@@ -139,5 +139,5 @@
             <div class="time"></div>
         </div>
 
-        <script src="app.js"></script>
+        <script src="public\js\app.js"></script>
     </main>
