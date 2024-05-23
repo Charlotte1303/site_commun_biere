@@ -15,11 +15,14 @@ body {
 }
 
 header {
-    grid-area: header;
+    grid-row: 1;
+    /* Positionne le header sur la première ligne de la grille */
+    grid-column: 1 / span 2;
+    /* Le header s'étend sur les deux colonnes */
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
-    margin: 10px;
+    margin: 10px
 }
 
 header img {
@@ -48,11 +51,20 @@ header ul li .panier {
 
 .menu ul li:hover {
     transform: translateY(-5px);
+    /* Déplace légèrement l'élément vers le haut au survol */
 }
 
 .menu ul li a {
     text-decoration: none;
+    /* Supprime la décoration des liens */
     color: white;
+}
+
+
+
+
+header .logo{
+ padding: 15%;
 }
 
 footer {

@@ -11,20 +11,21 @@ body {
 }
 
 header {
-    grid-row: 1; /* Positionne le header sur la première ligne de la grille */
-    grid-column: 1 / span 2; /* Le header s'étend sur les deux colonnes */
+    grid-row: 1;
+    /* Positionne le header sur la première ligne de la grille */
+    grid-column: 1 / span 2;
+    /* Le header s'étend sur les deux colonnes */
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
     margin: 10px
-    
 }
 
 header img {
     max-width: 100px;
 }
 
-header ul li .panier{
+header ul li .panier {
     max-width: 40px;
 }
 
@@ -45,12 +46,21 @@ header ul li .panier{
 }
 
 .menu ul li:hover {
-    transform: translateY(-5px); /* Déplace légèrement l'élément vers le haut au survol */
+    transform: translateY(-5px);
+    /* Déplace légèrement l'élément vers le haut au survol */
 }
 
 .menu ul li a {
-    text-decoration: none; /* Supprime la décoration des liens */
+    text-decoration: none;
+    /* Supprime la décoration des liens */
     color: white;
+}
+
+
+
+
+header .logo{
+ padding: 15%;
 }
 
 .titre {

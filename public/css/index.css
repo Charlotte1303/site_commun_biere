@@ -61,6 +61,12 @@ header ul li .panier {
 }
 
 
+
+
+header .logo{
+ padding: 15%;
+}
+
 .logo2 {
     grid-column: 1 / span 2;
     display: flex;
@@ -68,12 +74,6 @@ header ul li .panier {
     align-items: center;
     grid-row: 3;
 }
-
-header .logo{
- padding: 15%;
-}
-
-
 footer {
     grid-row: 5;
     /* Positionne le footer sur la troisième ligne de la grille */
