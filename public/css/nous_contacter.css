@@ -1,13 +1,17 @@
 body {
-    font-family: 'Roboto-Bold', sans-serif; /* Changement de la police de caractères */
+    font-family: 'Roboto-Bold', sans-serif;
+    /* Changement de la police de caractères */
     margin: 0;
     padding: 0;
     background-color: black;
     color: white;
     display: grid;
-    grid-template-rows: auto auto auto; /* Ajout des lignes de grille pour le header, le contenu et le footer */
-    grid-template-columns: 1fr 1fr; /* Deux colonnes pour le contenu */
-    min-height: 100vh; /* Pour assurer que la grille s'étend sur toute la hauteur de la fenêtre */
+    grid-template-rows: auto auto auto;
+    /* Ajout des lignes de grille pour le header, le contenu et le footer */
+    grid-template-columns: 1fr 1fr;
+    /* Deux colonnes pour le contenu */
+    min-height: 100vh;
+    /* Pour assurer que la grille s'étend sur toute la hauteur de la fenêtre */
 }
 
 header {
@@ -59,8 +63,8 @@ header ul li .panier {
 
 
 
-header .logo{
- padding: 15%;
+header .logo {
+    padding: 15%;
 }
 
 .titre {
@@ -78,7 +82,8 @@ header .logo{
 }
 
 .gauche {
-    grid-column: 1; /* Section gauche dans la première colonne */
+    grid-column: 1;
+    /* Section gauche dans la première colonne */
 }
 
 .droite {
@@ -87,14 +92,16 @@ header .logo{
     flex-wrap: wrap;
     flex-direction: column;
     align-content: flex-start;
-    font-weight: normal; /* Enlève le style en gras */
+    font-weight: normal;
+    /* Enlève le style en gras */
     font-size: large;
     justify-content: space-between;
 }
 
-.insta a{
+.insta a {
     list-style-type: none;
-    text-decoration: none; /* Supprime la décoration des liens */
+    text-decoration: none;
+    /* Supprime la décoration des liens */
     color: white;
     margin: 18px 0px;
 }
@@ -104,16 +111,19 @@ header .logo{
 }
 
 .form {
-    grid-column: 1 / span 2; /* Formulaire de contact s'étend sur les deux colonnes */
-    justify-self: center; /* Centrer horizontalement */
-    align-self: center; /* Centrer verticalement */
+    grid-column: 1 / span 2;
+    /* Formulaire de contact s'étend sur les deux colonnes */
+    justify-self: center;
+    /* Centrer horizontalement */
+    align-self: center;
+    /* Centrer verticalement */
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 40px;
 }
 
-.form h2{
+.form h2 {
     padding: 30px;
 }
 
@@ -124,11 +134,15 @@ form#contactForm {
 }
 
 footer {
-    grid-row: 5; /* Positionne le footer sur la troisième ligne de la grille */
-    grid-column: 1 / span 2; /* Le footer s'étend sur les deux colonnes */
+    grid-row: 5;
+    /* Positionne le footer sur la troisième ligne de la grille */
+    grid-column: 1 / span 2;
+    /* Le footer s'étend sur les deux colonnes */
     text-align: center;
-    padding: 0; /* Réduit la taille du padding du footer */
-    margin-top: 10px; /* Ajoute une marge en haut du footer */
+    padding: 0;
+    /* Réduit la taille du padding du footer */
+    margin-top: 10px;
+    /* Ajoute une marge en haut du footer */
 }
 
 
@@ -138,8 +152,10 @@ footer {
     position: absolute;
     width: 2px;
     height: 2px;
-    background-color: #fff; /* Couleur des paillettes */
-    border-radius: 50%; /* Pour rendre les paillettes rondes */
+    background-color: #fff;
+    /* Couleur des paillettes */
+    border-radius: 50%;
+    /* Pour rendre les paillettes rondes */
 }
 
 /* Animation des paillettes */
@@ -148,13 +164,16 @@ footer {
         transform: translateY(-100px) rotate(0deg);
         opacity: 0;
     }
+
     100% {
-        transform: translateY(100vh) rotate(720deg); /* Fait tourner les paillettes en tombant */
+        transform: translateY(100vh) rotate(720deg);
+        /* Fait tourner les paillettes en tombant */
         opacity: 1;
     }
 }
 
 /* Appliquer l'animation à chaque paillette */
 .paillette {
-    animation: tomber 5s linear infinite; /* Réglez la vitesse et la durée de l'animation selon vos préférences */
+    animation: tomber 5s linear infinite;
+    /* Réglez la vitesse et la durée de l'animation selon vos préférences */
 }

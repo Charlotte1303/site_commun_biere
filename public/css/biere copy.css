@@ -1,3 +1,4 @@
+
 header {
   grid-row: 1;
   /* Positionne le header sur la première ligne de la grille */
@@ -47,25 +48,21 @@ header ul li .panier {
 
 
 
-header .logo {
-  padding: 15%;
+header .logo{
+padding: 15%;
 }
 
 body {
-  font-family: 'Roboto-Bold', sans-serif;
-  /* Changement de la police de caractères */
-  margin: 0;
-  padding: 0;
-  background-color: black;
-  color: white;
-  display: grid;
-  grid-template-rows: auto auto auto;
-  /* Ajout des lignes de grille pour le header, le contenu et le footer */
-  grid-template-columns: 1fr 1fr;
-  /* Deux colonnes pour le contenu */
-  min-height: 100vh;
-  /* Pour assurer que la grille s'étend sur toute la hauteur de la fenêtre */
-}
+    font-family: 'Roboto-Bold', sans-serif; /* Changement de la police de caractères */
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-rows: auto auto auto; /* Ajout des lignes de grille pour le header, le contenu et le footer */
+    grid-template-columns: 1fr 1fr; /* Deux colonnes pour le contenu */
+    min-height: 100vh; /* Pour assurer que la grille s'étend sur toute la hauteur de la fenêtre */
+} 
 
 .beer-description {
   font-family: Arial, sans-serif;
@@ -113,21 +110,17 @@ body {
 }
 
 .portrait-image {
-  width: 32%;
-  margin-left: 140%;
-  width: 33%;
-  margin-left: 130%;
-  margin-top: -250%;
-}
+    width: 32%;
+    margin-left: 140%;
+    width: 33%;
+    margin-left: 130%;
+    margin-top: -250%;
+  }
 
 footer {
-  grid-row: 5;
-  /* Positionne le footer sur la troisième ligne de la grille */
-  grid-column: 1 / span 2;
-  /* Le footer s'étend sur les deux colonnes */
-  text-align: center;
-  padding: 0;
-  /* Réduit la taille du padding du footer */
-  margin-top: 10px;
-  /* Ajoute une marge en haut du footer */
+    grid-row: 5; /* Positionne le footer sur la troisième ligne de la grille */
+    grid-column: 1 / span 2; /* Le footer s'étend sur les deux colonnes */
+    text-align: center;
+    padding: 0; /* Réduit la taille du padding du footer */
+    margin-top: 10px; /* Ajoute une marge en haut du footer */
 }

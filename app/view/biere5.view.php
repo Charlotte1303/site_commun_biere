@@ -1,33 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="biere.css">
-    <title>Nos bières</title>
-</head>
-<body>
-<header>
-        <img src="public/images/Logo.png">
-        <nav class="menu">
-            <ul>
-                <li>
-                    <a href="app/view/index.html">Accueil</a>
-                </li>
-                <li>
-                    <a href="app/view/page_a_propos.html">A propos</a>
-                </li>
-                <li>
-                    <a href="app/view/page_nos_bieres.html">Nos bières</a>
-                </li>
-                <li>
-                    <a href="app/view/nous_contacter.html">Contact</a>
-                </li>
-
-            </ul>
-
-        </nav>
-    </header>
 <main> 
 <div class="beer-description">
   <h2>SOLEIL ARDENT</h2>
@@ -48,8 +18,3 @@
 </div>
 <img src="smartmockups_lt8upu6u.png" alt="Beer Portrait" class="portrait-image">
 </main>
-<footer>
-        <p>© 2024 Infinité. Tous droits réservés.</p>
-    </footer>
-</body>
-</html>

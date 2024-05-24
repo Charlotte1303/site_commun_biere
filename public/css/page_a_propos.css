@@ -1,4 +1,3 @@
-
 header {
     grid-row: 1;
     /* Positionne le header sur la première ligne de la grille */
@@ -48,8 +47,8 @@ header ul li .panier {
 
 
 
-header .logo{
- padding: 15%;
+header .logo {
+    padding: 15%;
 }
 
 body {
@@ -59,31 +58,41 @@ body {
     background-color: black;
     color: white;
     display: grid;
-    grid-template-rows: auto auto auto; /* Ajout des lignes de grille pour le header, le contenu et le footer */
-    grid-template-columns: 1fr 1fr; /* Deux colonnes pour le contenu */
-    min-height: 100vh; /* Pour assurer que la grille s'étend sur toute la hauteur de la fenêtre */
+    grid-template-rows: auto auto auto;
+    /* Ajout des lignes de grille pour le header, le contenu et le footer */
+    grid-template-columns: 1fr 1fr;
+    /* Deux colonnes pour le contenu */
+    min-height: 100vh;
+    /* Pour assurer que la grille s'étend sur toute la hauteur de la fenêtre */
 }
 
 h1 {
     font-family: "BodoniFLF-Bold", sans-serif;
-    font-size: 100px; /* Taille de la police */
-    text-align: center; /* Centrer le texte */
-    margin-left: 80%; /* Décaler vers la droite de 50 pixels */
+    font-size: 100px;
+    /* Taille de la police */
+    text-align: center;
+    /* Centrer le texte */
+    margin-left: 80%;
+    /* Décaler vers la droite de 50 pixels */
 }
 
 h2 {
     font-family: "Robots-Black", sans-serif;
     margin-top: 20%;
-    font-size: 20px; /* Taille de la police */
+    font-size: 20px;
+    /* Taille de la police */
     text-align: center;
-    margin-left: 80%; /* Décaler vers la droite  */
+    margin-left: 80%;
+    /* Décaler vers la droite  */
 }
 
 h3 {
     font-family: "Roboto-Light", sans-serif;
-    font-size: 15px; /* Taille de la police */
+    font-size: 15px;
+    /* Taille de la police */
     text-align: center;
-    margin-left: 80%; /* Décaler vers la droite  */
+    margin-left: 80%;
+    /* Décaler vers la droite  */
 }
 
 
@@ -93,55 +102,74 @@ main {
 
 .container {
     display: grid;
-    grid-template-columns: auto 1fr; /* Définit deux colonnes, une automatique et une flexible */
+    grid-template-columns: auto 1fr;
+    /* Définit deux colonnes, une automatique et une flexible */
     grid-template-rows: auto;
     grid-gap: 20px;
     text-align: center;
     justify-items: center;
 }
 
-.container > * {
-    grid-column: 2; /* Place tous les éléments enfants dans la deuxième colonne */
+.container>* {
+    grid-column: 2;
+    /* Place tous les éléments enfants dans la deuxième colonne */
 }
 
 .container::before {
-    content: ""; /* Ajoute un pseudo-élément pour forcer une colonne vide à gauche */
+    content: "";
+    /* Ajoute un pseudo-élément pour forcer une colonne vide à gauche */
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     margin: 0;
 
 }
 
 /* Ajouter du style à l'image sous h3 */
-h3 + img {
-    width: 100px; /* Définissez la largeur de votre image */
-    height: auto; /* Laissez la hauteur s'ajuster automatiquement pour conserver les proportions */
-    margin-top: 40px; /* Ajoutez un espace de 30 pixels au-dessus de l'image */
-    display: block; /* Assurez-vous que l'image est affichée comme un bloc pour gérer son alignement */
-    margin-left: auto; /* Centrez l'image horizontalement */
-    margin-right: auto; /* Centrez l'image horizontalement */
+h3+img {
+    width: 100px;
+    /* Définissez la largeur de votre image */
+    height: auto;
+    /* Laissez la hauteur s'ajuster automatiquement pour conserver les proportions */
+    margin-top: 40px;
+    /* Ajoutez un espace de 30 pixels au-dessus de l'image */
+    display: block;
+    /* Assurez-vous que l'image est affichée comme un bloc pour gérer son alignement */
+    margin-left: auto;
+    /* Centrez l'image horizontalement */
+    margin-right: auto;
+    /* Centrez l'image horizontalement */
 }
 
 /* Style spécifique pour le nouveau titre "Qui sommes-nous ?" */
 .nouveau-titre {
-    color: hsl(0, 0%, 100%); /* Couleur du texte */
-    font-size: 20px; /* Taille de la police */
-    margin-top: 40px; /* Espace au-dessus du titre */
+    color: hsl(0, 0%, 100%);
+    /* Couleur du texte */
+    font-size: 20px;
+    /* Taille de la police */
+    margin-top: 40px;
+    /* Espace au-dessus du titre */
     /* Ajoutez d'autres styles si nécessaire */
 }
 
 /* Styles pour les images "photo_profil" */
 .photos {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* Une colonne pour chaque image */
-    grid-gap: 2px; /* Espacement entre les images */
-    justify-items: center; /* Centrer horizontalement */
+    grid-template-columns: repeat(5, 1fr);
+    /* Une colonne pour chaque image */
+    grid-gap: 2px;
+    /* Espacement entre les images */
+    justify-items: center;
+    /* Centrer horizontalement */
 }
 
 .photo_profil {
-    max-width: 80px; /* Largeur maximale des images */
-    height: auto; /* Hauteur automatique pour conserver les proportions */
+    max-width: 80px;
+    /* Largeur maximale des images */
+    height: auto;
+    /* Hauteur automatique pour conserver les proportions */
 }
 
 /* Style pour les nouvelles images avec la même classe */
@@ -155,17 +183,24 @@ h3 + img {
 }
 
 .nouvelle_photo img {
-    max-width: 80px; /* Largeur maximale des images */
-    height: auto; /* Hauteur automatique pour conserver les proportions */
+    max-width: 80px;
+    /* Largeur maximale des images */
+    height: auto;
+    /* Hauteur automatique pour conserver les proportions */
 }
 
 /* Styles pour la vidéo */
 .video_backstage {
-    grid-column: span 4; /* La vidéo s'étend sur 4 colonnes de la grille */
-    max-width: 250px; /* Largeur maximale de la vidéo */
-    height: auto; /* Hauteur automatique pour conserver les proportions */
-    display: block; /* Afficher la vidéo comme un bloc */
-    margin: 50px auto; /* Centrer la vidéo horizontalement et déplacer vers le bas de 20 pixels */
+    grid-column: span 4;
+    /* La vidéo s'étend sur 4 colonnes de la grille */
+    max-width: 250px;
+    /* Largeur maximale de la vidéo */
+    height: auto;
+    /* Hauteur automatique pour conserver les proportions */
+    display: block;
+    /* Afficher la vidéo comme un bloc */
+    margin: 50px auto;
+    /* Centrer la vidéo horizontalement et déplacer vers le bas de 20 pixels */
 }
 
 
@@ -175,8 +210,10 @@ h3 + img {
     position: absolute;
     width: 2px;
     height: 2px;
-    background-color: #fff; /* Couleur des paillettes */
-    border-radius: 50%; /* Pour rendre les paillettes rondes */
+    background-color: #fff;
+    /* Couleur des paillettes */
+    border-radius: 50%;
+    /* Pour rendre les paillettes rondes */
 }
 
 /* Animation des paillettes */
@@ -185,24 +222,31 @@ h3 + img {
         transform: translateY(-100px) rotate(0deg);
         opacity: 0;
     }
+
     100% {
-        transform: translateY(100vh) rotate(720deg); /* Fait tourner les paillettes en tombant */
+        transform: translateY(100vh) rotate(720deg);
+        /* Fait tourner les paillettes en tombant */
         opacity: 1;
     }
 }
 
 /* Appliquer l'animation à chaque paillette */
 .paillette {
-    animation: tomber 5s linear infinite; /* Réglez la vitesse et la durée de l'animation selon vos préférences */
+    animation: tomber 5s linear infinite;
+    /* Réglez la vitesse et la durée de l'animation selon vos préférences */
 }
 
 
 
 
 footer {
-    grid-row: 5; /* Positionne le footer sur la troisième ligne de la grille */
-    grid-column: 1 / span 2; /* Le footer s'étend sur les deux colonnes */
+    grid-row: 5;
+    /* Positionne le footer sur la troisième ligne de la grille */
+    grid-column: 1 / span 2;
+    /* Le footer s'étend sur les deux colonnes */
     text-align: center;
-    padding: 0; /* Réduit la taille du padding du footer */
-    margin-top: 10px; /* Ajoute une marge en haut du footer */
+    padding: 0;
+    /* Réduit la taille du padding du footer */
+    margin-top: 10px;
+    /* Ajoute une marge en haut du footer */
 }
