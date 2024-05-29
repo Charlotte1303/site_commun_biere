@@ -1,3 +1,11 @@
+<?php
+session_start();
+if (!isset($_SESSION['age_verified']) || $_SESSION['age_verified'] !== true) {
+    header('Location: age_verification.php');
+    exit;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
