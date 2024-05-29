@@ -1,6 +1,9 @@
 <?php
-// Inclure votre fichier de configuration de base de données
+// Inclure votre fichier de connexion à la base de données
 include 'app\model\connexionBDD.php';
+
+// Récupérer une connexion à la base de données
+$pdo = getDatabaseConnection();
 
 // Vérifier si le formulaire a été soumis
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -10,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = $_POST['message'];
 
     // Préparer et exécuter la requête d'insertion
-    $stmt = $pdo->prepare("INSERT INTO contacts (nom, email, message) VALUES (?, ?, ?)");
+    $stmt = $pdo->prepare("INSERT INTO formulaire_de_contact  (nom, email, message) VALUES (?, ?, ?)");
     $stmt->execute([$nom, $email, $message]);
 
     // Redirection vers une page de confirmation ou afficher un message de confirmation
