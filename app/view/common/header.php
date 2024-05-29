@@ -19,7 +19,7 @@ if (!isset($_SESSION['age_verified']) || $_SESSION['age_verified'] !== true) {
 <body>
 
     <header>
-        <a href="app/view/common/index.html"><img class="logo" src="public/images/Logo.png"></a>
+        <a href="index.php"><img class="logo" src="public/images/Logo.png"></a>
         <nav class="menu">
             <ul>
                 <li>
