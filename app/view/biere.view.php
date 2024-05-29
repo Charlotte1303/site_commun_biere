@@ -18,4 +18,3 @@
 </div>
 <img src="public/images/smartmockups_lt8udws5.png" alt="Beer Portrait" class="portrait-image">
 </main>
-

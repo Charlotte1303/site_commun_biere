@@ -3,7 +3,7 @@
 $title = "biere1";
 $css = "biere.css";
 require_once 'app/model/connexionBDD.php';
-
+require_once 'app/model/biere.model.php';
 //2 Générer Vue
 $currentPage = 'biere1';
 ob_start();

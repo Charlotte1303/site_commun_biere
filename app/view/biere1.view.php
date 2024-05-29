@@ -16,5 +16,5 @@
   <p>Coloration: <span>(no value provided)</span></p>
   <p>Contient du gluten</p>
 </div>
-<img src="public/images/smartmockups_lt8udws5" alt="Beer Portrait" class="portrait-image">
+<img src="public/images/smartmockups_lt8udws5.png" alt="Beer Portrait" class="portrait-image">
 </main>

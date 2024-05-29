@@ -63,8 +63,8 @@ header ul li .panier {
 
 
 
-header .logo{
- padding: 15%;
+header .logo {
+    padding: 15%;
 }
 
 .logo2 {
@@ -74,6 +74,7 @@ header .logo{
     align-items: center;
     grid-row: 3;
 }
+
 footer {
     grid-row: 5;
     /* Positionne le footer sur la troisième ligne de la grille */
