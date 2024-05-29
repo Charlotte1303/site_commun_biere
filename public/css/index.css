@@ -94,6 +94,8 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    grid-row: 4;
+    grid-column: 1 / span2;
   }
   
   .livre {
