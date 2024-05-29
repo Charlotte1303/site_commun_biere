@@ -110,6 +110,12 @@ footer {
     height: auto;
   }
   
+  .histoire img {
+    max-width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
   .histoire {
     position: absolute;
     top: 0;

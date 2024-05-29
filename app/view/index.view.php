@@ -14,6 +14,7 @@
     <div class="histoire">
       <p>Notre bière blonde au Poivre de Sichuan, est une création inspirée de la tradition belge. Non filtrée et non pasteurisée, elle incarne la résilience du phénix avec sa saveur épicée et son caractère unique. 
         C’est ne expérience gustative enflammée et renouvelée à chaque gorgée.</p>
+        <img src="public\images\smartmockups_lt8udws5.png">
     </div>
   </div>
   <div class="livre">
