@@ -1,5 +1,9 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 session_start();
+
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (isset($_POST['age_confirm']) && $_POST['age_confirm'] == 'yes') {
         $_SESSION['age_verified'] = true;
@@ -16,7 +20,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vérification de l'âge</title>
-    <link rel="stylesheet" href="public/css/styles.css">
+    <link rel="stylesheet" href="public/css/age_verification.css">
+
 </head>
 <body>
     <main>
@@ -31,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             </form>
             <?php
             if (isset($error_message)) {
-                echo "<p style='color: red;'>$error_message</p>";
+                echo "<p>$error_message</p>";
             }
             ?>
         </section>
