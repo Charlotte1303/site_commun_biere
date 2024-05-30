@@ -67,11 +67,16 @@ header .logo {
     padding: 15%;
 }
 
+body main {
+    grid-column: 1 / span 2;
+}
+
 .titre {
     grid-column: 1 / span 2;
     text-align: center;
     padding: 20px;
 }
+
 
 .poster img {
     max-width: 100%;
