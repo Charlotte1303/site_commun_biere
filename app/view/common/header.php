@@ -26,10 +26,10 @@ if (!isset($_SESSION['age_verified']) || $_SESSION['age_verified'] !== true) {
                     <a href="index.php">Accueil</a>
                 </li>
                 <li>
-                    <a href="page_a_propos.php">A propos</a>
+                    <a href="a_propos.php">A propos</a>
                 </li>
                 <li>
-                    <a href="page_nos_bieres.php">Nos bières</a>
+                    <a href="nos_bieres.php">Nos bières</a>
                 </li>
                 <li>
                     <a href="brassage.php">Brassage</a>
@@ -40,14 +40,6 @@ if (!isset($_SESSION['age_verified']) || $_SESSION['age_verified'] !== true) {
                 <li>
                     <a href=""><img class="panier" src="public/images/Panier_logo.png"></a>
                 </li>
-                <li>
-                    <!-- Formulaire de recherche -->
-                    <form action="search.php" method="get">
-                        <input type="text" name="search" placeholder="Rechercher une bière">
-                        <input type="submit" value="Rechercher">
-                    </form>
-                </li>
-
             </ul>
 
         </nav>
