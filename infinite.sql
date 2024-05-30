@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : jeu. 30 mai 2024 à 20:57
+-- Généré le : jeu. 30 mai 2024 à 21:06
 -- Version du serveur : 8.0.31
 -- Version de PHP : 8.0.26
 
@@ -152,7 +152,6 @@ CREATE TABLE IF NOT EXISTS `formulaire_de_contact` (
   `email` varchar(90) COLLATE utf8mb4_general_ci NOT NULL,
   `nom` varchar(90) COLLATE utf8mb4_general_ci NOT NULL,
   `idClient` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  PRIMARY KEY (`idFormulaire_de_contact`),
   KEY `idClient` (`idClient`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -161,7 +160,8 @@ CREATE TABLE IF NOT EXISTS `formulaire_de_contact` (
 --
 
 INSERT INTO `formulaire_de_contact` (`idFormulaire_de_contact`, `message`, `email`, `nom`, `idClient`) VALUES
-('', 'test\r\n', 'jeanvoinecharlotte@gmail.com', 'Charlotte Jeanvoine', '');
+('', 'test\r\n', 'jeanvoinecharlotte@gmail.com', 'Charlotte Jeanvoine', ''),
+('', 'test2', 'jeanvoinecharlotte@gmail.com', 'Charlotte Jeanvoine', '');
 
 -- --------------------------------------------------------
 

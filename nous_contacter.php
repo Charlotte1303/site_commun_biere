@@ -5,13 +5,6 @@ include 'app/model/connexionBDD.php';
 // Récupérer une connexion à la base de données
 $pdo = getDatabaseConnection();
 
-// Vérifier si la connexion à la base de données a réussi
-if ($pdo) {
-    echo "Connexion réussie à la base de données.<br>";
-} else {
-    echo "Échec de la connexion à la base de données.";
-    exit();
-}
 
 // Vérifier si le formulaire a été soumis
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
