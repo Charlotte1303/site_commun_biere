@@ -11,7 +11,7 @@
                             <div class="title"><?= $aBiere['Nom'] ?></div>
                             <div class="topic"><?= $aBiere['Description'] ?></div>
                             <div class="buttons">
-                                <button><a href="biere.view.php?id=<?= $aBiere['idBiere'] ?>">ACHETER</a></button>
+                                <button><a href="biere.php?id=<?= $aBiere['idBiere'] ?>">ACHETER</a></button>
                             </div>
                         </div>
                 </div>
