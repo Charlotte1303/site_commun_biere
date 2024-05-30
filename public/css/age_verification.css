@@ -27,8 +27,8 @@ section p {
 }
 
 button {
-    background-color: #ffffff;
-    color: rgb(24, 24, 24);
+    background-color: #000000;
+    color: rgb(255 255 255);
     border: none;
     padding: 10px 20px;
     margin: 5px;
