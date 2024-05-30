@@ -3,6 +3,13 @@
 $title = "nos_bieres";
 $css = "nosbieres.css";
 
+require_once "app/model/connexionBDD.php";
+
+$pdo = getDatabaseConnection();
+$bieres = getAllBieres($pdo);
+
+$page_title = 'Catalogue';
+
 //2 Générer Vue
 $currentPage = 'nos_bieres';
 ob_start();
