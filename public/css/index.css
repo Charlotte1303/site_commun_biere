@@ -98,8 +98,11 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 300px);
     grid-template-rows: repeat(2, 400px);
-    gap: 20px; /* Ajoute de l'espace entre les cartes */
+    gap: 20px;
     perspective: 1000px;
+    grid-row: 4;
+    grid-column: 1 / span2;
+    justify-content: center;
 }
 
 .card {
