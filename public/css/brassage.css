@@ -74,7 +74,7 @@ body main {
 .titre {
     grid-column: 1 / span 2;
     text-align: center;
-    padding: 20px;
+    padding: 5%;
 }
 
 
