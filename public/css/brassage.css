@@ -73,9 +73,11 @@ header .logo {
     padding: 20px;
 }
 
-section.poster img {
-    max-width: 70%;
+.poster img {
+    max-width: 100%;
 }
+
+
 
 footer {
     grid-row: 5;
