@@ -15,10 +15,10 @@
                     <a href="app/view/index.html">Accueil</a>
                 </li>
                 <li>
-                    <a href="app/view/page_a_propos.html">A propos</a>
+                    <a href="app/view/a_propos.html">A propos</a>
                 </li>
                 <li>
-                    <a href="app/view/page_nos_bieres.html">Nos bières</a>
+                    <a href="app/view/nos_bieres.html">Nos bières</a>
                 </li>
                 <li>
                     <a href="app/view/nous_contacter.html">Contact</a>

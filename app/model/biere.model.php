@@ -17,10 +17,10 @@ function getBiere(int $idBiere, PDO $pdo): array
 
 function getAllBieres(PDO $pdo) 
 {
-    $sql = "SELECT * FROM bieres";
+    $sql = "SELECT * FROM biere";
     $stmt = $pdo->query($sql);
-    $bieres = $stmt->fetchAll();
-    return $bieres;
+    $biere = $stmt->fetchAll();
+    return $biere;
 }
 
 function getStudentsByPage(PDO $pdo, int $numPage): array

@@ -3,18 +3,15 @@
     <div class="carousel">
         <!-- list item -->
         <div class="list">
-            <?php foreach ($students as $aBiere) : ?>
+            <?php foreach ($bieres as $aBiere) : ?>
                 <div class="item">
-                    <a href="page_nos_bieres.php?id=<?= $aBiere['id'] ?>">
-                        <img src="public/images/<?= $aBiere['photo'] ?>">
+                        <img src="public/images/<?= $aBiere['Photo'] ?>">
                         <div class="content">
                             <div class="author">BIERE COMMUNE</div>
                             <div class="title"><?= $aBiere['Nom'] ?></div>
                             <div class="topic"><?= $aBiere['Description'] ?></div>
                             <div class="buttons">
-                                <button>EN SAVOIR PLUS</button>
-                                <button>
-                                    <a href="biere.php?id=<?= $aBiere['id'] ?>">ACHETER</a></button>
+                                <button><a href="biere.view.php?id=<?= $aBiere['idBiere'] ?>">ACHETER</a></button>
                             </div>
                         </div>
                 </div>
@@ -55,9 +52,8 @@
             <!-- next prev -->
 
             <div class="arrows">
-                <button id="prev">
-                    << /button>
-                        <button id="next">></button>
+                <button id="prev"><</button>
+                <button id="next">></button>
             </div>
             <!-- time running -->
             <div class="time"></div>
