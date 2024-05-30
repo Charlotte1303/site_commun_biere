@@ -54,7 +54,7 @@
                 <img src="public/images/b6.png" alt="B6 Image">
             </div>
             <div class="card-back">
-                <img src="1public/images/1.png" alt="11 Image">
+                <img src="public/images/1.png" alt="11 Image">
             </div>
         </div>
     </div>
