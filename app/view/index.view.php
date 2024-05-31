@@ -6,6 +6,11 @@
 
   </main>
 
+  <div class="fleche" id="fleche">
+    <a href="#contenu">
+      <img src="public\images\fleche2.png" alt="Flèche vers le bas">
+    </a>
+  </div>
 
   <div class="card-container">
     <div class="card">
@@ -57,5 +62,7 @@
       </div>
     </div>
   </div>
+
+  <script src="public\js\script.js"></script>
 
 </body>

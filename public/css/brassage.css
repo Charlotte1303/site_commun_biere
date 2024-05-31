@@ -1,14 +1,19 @@
 body {
-    font-family: 'Roboto-Bold', sans-serif; /* Changement de la police de caractères */
+    font-family: 'Roboto-Bold', sans-serif;
+    /* Changement de la police de caractères */
     margin: 0;
     padding: 0;
     background-color: black;
     color: white;
     display: grid;
-    grid-template-rows: 50px auto auto; /* Ajout des lignes de grille pour le header, le contenu et le footer */
-    grid-template-columns: 1fr 1fr; /* Deux colonnes pour le contenu */
-    min-height: 100vh; /* Pour assurer que la grille s'étend sur toute la hauteur de la fenêtre */
+    grid-template-rows: 50px auto auto;
+    /* Ajout des lignes de grille pour le header, le contenu et le footer */
+    grid-template-columns: 1fr 1fr;
+    /* Deux colonnes pour le contenu */
+    min-height: 100vh;
+    /* Pour assurer que la grille s'étend sur toute la hauteur de la fenêtre */
 }
+
 header {
     grid-row: 1;
     /* Positionne le header sur la première ligne de la grille */
@@ -58,22 +63,67 @@ header ul li .panier {
 
 
 
-header .logo{
- padding: 15%;
+header .logo {
+    padding: 15%;
+}
+
+body main {
+    grid-column: 1 / span 2;
 }
 
 .titre {
     grid-column: 1 / span 2;
     text-align: center;
-    padding: 20px;
+    padding: 5%;
 }
 
+
+.poster img {
+    max-width: 100%;
+}
+
+
+
+.etape {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contenu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contenu img {
+    max-width: 30%;
+}
+
+.contenu .texte {
+    max-width: 50%;
+}
+
+/* Pour inverser l'ordre des éléments sur chaque deuxième étape */
+.etape:nth-child(even) .contenu {
+    flex-direction: row-reverse;
+}
+
+
+
 footer {
-    grid-row: 5; /* Positionne le footer sur la troisième ligne de la grille */
-    grid-column: 1 / span 2; /* Le footer s'étend sur les deux colonnes */
+    grid-row: 5;
+    /* Positionne le footer sur la troisième ligne de la grille */
+    grid-column: 1 / span 2;
+    /* Le footer s'étend sur les deux colonnes */
     text-align: center;
-    padding: 0; /* Réduit la taille du padding du footer */
-    margin-top: 10px; /* Ajoute une marge en haut du footer */
+    padding: 0;
+    /* Réduit la taille du padding du footer */
+    margin-top: 10px;
+    /* Ajoute une marge en haut du footer */
     align-items: end;
     display: flex;
     justify-content: center;
