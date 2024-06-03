@@ -1,5 +1,3 @@
-
-
     <main>
         <a href="a_propos.php" class="boutonr2"><img class="fleche" src="public/images/fleche.png" alt="Flèche"></a>
         <div class="titre">
