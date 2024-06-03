@@ -7,6 +7,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    
 }
 
 
@@ -83,7 +84,7 @@ header .logo {
     grid-template-columns: repeat(3, 300px);
     grid-template-rows: repeat(2, 400px);
     gap: 8%;
-    perspective: 1000px;
+    /* perspective: 1000px; */
     justify-content: center;
     padding: 10%;
 }
@@ -148,7 +149,6 @@ header .logo {
 
 footer {
     text-align: center;
-    padding: 20px;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     position: relative;

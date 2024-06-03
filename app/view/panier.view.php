@@ -1,18 +1,4 @@
-<head>
-	<title>Panier</title>
-	<style>
-		table {
-			border-collapse: collapse;
-			width: 100%;
-		}
-		th, td {
-			border: 1px solid #ddd;
-			padding: 10px;
-			text-align: left;
-		}
-	</style>
-</head>
-<body>
+<main>
 	<h1>Panier</h1>
 	<?php
 	session_start();
@@ -69,5 +55,5 @@
 	</table>
 	<p><a href="vider-panier.php">Vider le panier</a></p>
 	<p><a href="valider-panier.php">Valider le panier</a></p>
-</body>
+	</main>
 

@@ -98,3 +98,13 @@ footer {
 .background-image {
     display: none; /* Masque l'image de fond pour la page du panier */
 }
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}

@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
-    var content = document.querySelector('.content');
-    var fleche = document.getElementById('fleche');
+    let content = document.querySelector('.content');
+    let fleche = document.getElementById('fleche');
 
     content.addEventListener('scroll', function() {
         // Si la position de défilement verticale est supérieure à 100 pixels
-        if (content.scrollTop > 100) {
+        if (document.body.scrollHeight > 10) {
             // Ajouter la classe "invisible" pour cacher la flèche
             fleche.classList.add('invisible');
         } else {
