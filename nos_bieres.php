@@ -3,6 +3,11 @@
 $title = "nos_bieres";
 $css = "nosbieres.css";
 
+if (isset($_SESSION['message'])) {
+    $message = $_SESSION['message'];
+    unset($_SESSION['message']);
+}
+
 require_once "app/model/connexionBDD.php";
 require_once "app/model/biere.model.php";
 
@@ -17,4 +22,3 @@ $content = ob_get_clean();
 //3 inclure le layout
 
 include 'app/view/common/layout.php';
-?>

@@ -47,3 +47,10 @@ function showSlider(type){
         next.click();
     }, timeAutoNext)
 }
+document.addEventListener('keydown', function(event) {
+    if (event.keyCode === 39) { // right arrow
+      showSlider('next');
+    } else if (event.keyCode === 37) { // left arrow
+      showSlider('prev');
+    }
+  });
