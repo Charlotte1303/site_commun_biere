@@ -15,15 +15,6 @@
                 </div>
             <?php endforeach?>
 
-            <!-- list thumnail -->
-            <div class="thumbnail">
-                <?php foreach ($bieres as $aBiere) :?>
-                    <div class="item">
-                        <img src="public/images/<?= htmlspecialchars($aBiere['Photo'])?>">
-                    </div>
-                <?php endforeach?>
-            </div>
-
             <!-- next prev -->
 
             <div class="arrows">
@@ -35,6 +26,7 @@
             <div class="time"></div>
         </div>
 
-        <script src="public/js/app.js"></script>
+        <script src="public/js/script.js"></script>
+        
     </div>
 </main>
