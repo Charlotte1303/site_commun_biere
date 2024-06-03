@@ -62,9 +62,39 @@
                 <a href="index.html"><img class="nouvelle_photo" src="public/images/photo_profil.png" alt="Photo profil 9"></a>
             </div>
             <div class="jeu">
-                <h2 class="nouveau-titre">NOTRE JEU</h2>
+                <h2 class="jeu2">NOTRE JEU</h2>
                 <a class="lien" href="https://infiinite.alwaysdata.net/"><strong>Infinité le jeu !</strong></a>
             </div>
             <video class="video_backstage" src="video_backstage.mp4" controls></video>
         </section>
+        <script>
+        function generateStars() {
+            const numStars = 100; // Nombre d'étoiles à générer
+            const container = document.querySelector('body');
+
+            for (let i = 0; i < numStars; i++) {
+                const star = document.createElement('div');
+                star.classList.add('star');
+
+                // Position aléatoire
+                const x = Math.random() * window.innerWidth;
+                const y = Math.random() * window.innerHeight;
+
+                // Taille aléatoire
+                const size = Math.random() * 2; // Taille de l'étoile entre 0 et 2px
+                star.style.width = `${size}px`;
+                star.style.height = `${size}px`;
+
+                // Positionner l'étoile
+                star.style.top = `${y}px`;
+                star.style.left = `${x}px`;
+
+                container.appendChild(star);
+            }
+        }
+
+        // Appeler la fonction pour générer les étoiles une fois que la page est chargée
+        window.onload = generateStars;
+    </script>
+
     </main>

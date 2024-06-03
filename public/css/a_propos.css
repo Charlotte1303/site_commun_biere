@@ -161,13 +161,51 @@ footer {
     margin-top: 10px;
 }
 
-/* Ajoutez vos styles pour la classe .lien */
 a.lien {
     color: white !important;
     text-decoration: none !important;
+    display: block;
+    margin-top: 20px;
+    animation: pulse 1.5s infinite;
 }
 
-.jeu a.lien {
-    color: white !important;
-    text-decoration: none !important;
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.jeu2 {
+    font-size: 20px;
+    margin-top: 10%;
+    margin-bottom: 40px;
+}
+
+
+
+
+.star {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    animation: twinkling 5s infinite;
+}
+
+/* Animation de scintillement */
+@keyframes twinkling {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
