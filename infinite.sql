@@ -2,9 +2,9 @@
 -- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Hôte : 127.0.0.1:3306
--- Généré le : lun. 03 juin 2024 à 10:21
--- Version du serveur : 8.0.31
+-- Hôte : localhost:8889
+-- Généré le : lun. 03 juin 2024 à 13:13
+-- Version du serveur : 5.7.39
 -- Version de PHP : 8.2.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -27,16 +27,13 @@ SET time_zone = "+00:00";
 -- Structure de la table `avis`
 --
 
-DROP TABLE IF EXISTS `avis`;
-CREATE TABLE IF NOT EXISTS `avis` (
-  `idAvis` varchar(50) COLLATE utf8mb4_general_ci NOT NULL,
-  `Texte` text COLLATE utf8mb4_general_ci,
+CREATE TABLE `avis` (
+  `idAvis` varchar(50) NOT NULL,
+  `Texte` text,
   `Note` decimal(2,1) NOT NULL,
   `Date_de_publication` date NOT NULL,
-  `idClient` varchar(50) COLLATE utf8mb4_general_ci NOT NULL,
-  PRIMARY KEY (`idAvis`),
-  KEY `idClient` (`idClient`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  `idClient` varchar(50) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -44,23 +41,20 @@ CREATE TABLE IF NOT EXISTS `avis` (
 -- Structure de la table `biere`
 --
 
-DROP TABLE IF EXISTS `biere`;
-CREATE TABLE IF NOT EXISTS `biere` (
-  `idBiere` varchar(50) COLLATE utf8mb4_general_ci NOT NULL,
-  `Nom` varchar(50) COLLATE utf8mb4_general_ci NOT NULL,
+CREATE TABLE `biere` (
+  `idBiere` varchar(50) NOT NULL,
+  `Nom` varchar(50) NOT NULL,
   `Degre_d_alcool` decimal(3,1) NOT NULL,
-  `Ingredients` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `Contenance` int NOT NULL,
+  `Ingredients` varchar(255) NOT NULL,
+  `Contenance` int(11) NOT NULL,
   `Prix` decimal(4,2) NOT NULL,
-  `Description` varchar(300) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `Valeurs_nutritionnelles` varchar(300) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `Disponibilite` varchar(50) COLLATE utf8mb4_general_ci NOT NULL,
-  `Photo` varchar(100) COLLATE utf8mb4_general_ci NOT NULL,
-  `Bouteille` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
-  `Accroche` varchar(100) COLLATE utf8mb4_general_ci NOT NULL,
-  PRIMARY KEY (`idBiere`),
-  UNIQUE KEY `Nom` (`Nom`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  `Description` varchar(300) NOT NULL,
+  `Valeurs_nutritionnelles` varchar(300) NOT NULL,
+  `Disponibilite` varchar(50) NOT NULL,
+  `Photo` varchar(100) NOT NULL,
+  `Bouteille` varchar(255) NOT NULL,
+  `Accroche` varchar(100) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 --
 -- Déchargement des données de la table `biere`
@@ -80,19 +74,15 @@ INSERT INTO `biere` (`idBiere`, `Nom`, `Degre_d_alcool`, `Ingredients`, `Contena
 -- Structure de la table `client`
 --
 
-DROP TABLE IF EXISTS `client`;
-CREATE TABLE IF NOT EXISTS `client` (
-  `idClient` varchar(50) COLLATE utf8mb4_general_ci NOT NULL,
-  `Prénom` varchar(50) COLLATE utf8mb4_general_ci NOT NULL,
-  `Nom` varchar(50) COLLATE utf8mb4_general_ci NOT NULL,
-  `Adresse_email` varchar(50) COLLATE utf8mb4_general_ci NOT NULL,
-  `Telephone` varchar(50) COLLATE utf8mb4_general_ci NOT NULL,
-  `Date_de_naissance` int NOT NULL,
-  `Adresse` varchar(50) COLLATE utf8mb4_general_ci NOT NULL,
-  PRIMARY KEY (`idClient`),
-  UNIQUE KEY `Adresse_email` (`Adresse_email`),
-  UNIQUE KEY `Telephone` (`Telephone`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+CREATE TABLE `client` (
+  `idClient` varchar(50) NOT NULL,
+  `Prénom` varchar(50) NOT NULL,
+  `Nom` varchar(50) NOT NULL,
+  `Adresse_email` varchar(50) NOT NULL,
+  `Telephone` varchar(50) NOT NULL,
+  `Date_de_naissance` int(11) NOT NULL,
+  `Adresse` varchar(50) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 --
 -- Déchargement des données de la table `client`
@@ -108,15 +98,12 @@ INSERT INTO `client` (`idClient`, `Prénom`, `Nom`, `Adresse_email`, `Telephone`
 -- Structure de la table `commande`
 --
 
-DROP TABLE IF EXISTS `commande`;
-CREATE TABLE IF NOT EXISTS `commande` (
-  `idCommande` varchar(50) COLLATE utf8mb4_general_ci NOT NULL,
-  `Statut` varchar(50) COLLATE utf8mb4_general_ci NOT NULL,
+CREATE TABLE `commande` (
+  `idCommande` varchar(50) NOT NULL,
+  `Statut` varchar(50) NOT NULL,
   `Date_de_commande` date NOT NULL,
-  `idClient` varchar(50) COLLATE utf8mb4_general_ci NOT NULL,
-  PRIMARY KEY (`idCommande`),
-  KEY `idClient` (`idClient`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  `idClient` varchar(50) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 --
 -- Déchargement des données de la table `commande`
@@ -132,14 +119,11 @@ INSERT INTO `commande` (`idCommande`, `Statut`, `Date_de_commande`, `idClient`) 
 -- Structure de la table `contenir`
 --
 
-DROP TABLE IF EXISTS `contenir`;
-CREATE TABLE IF NOT EXISTS `contenir` (
-  `idBiere` varchar(50) COLLATE utf8mb4_general_ci NOT NULL,
-  `idCommande` varchar(50) COLLATE utf8mb4_general_ci NOT NULL,
-  `quantité` int NOT NULL,
-  PRIMARY KEY (`idBiere`,`idCommande`),
-  KEY `idCommande` (`idCommande`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+CREATE TABLE `contenir` (
+  `idBiere` varchar(50) NOT NULL,
+  `idCommande` varchar(50) NOT NULL,
+  `quantité` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -147,15 +131,12 @@ CREATE TABLE IF NOT EXISTS `contenir` (
 -- Structure de la table `formulaire_de_contact`
 --
 
-DROP TABLE IF EXISTS `formulaire_de_contact`;
-CREATE TABLE IF NOT EXISTS `formulaire_de_contact` (
-  `idFormulaire_de_contact` varchar(50) COLLATE utf8mb4_general_ci NOT NULL,
-  `message` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+CREATE TABLE `formulaire_de_contact` (
+  `idFormulaire_de_contact` varchar(50) NOT NULL,
+  `message` varchar(255) NOT NULL,
   `Date_message` date NOT NULL,
-  `idClient` varchar(50) COLLATE utf8mb4_general_ci NOT NULL,
-  PRIMARY KEY (`idFormulaire_de_contact`),
-  KEY `idClient` (`idClient`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  `idClient` varchar(50) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -163,15 +144,66 @@ CREATE TABLE IF NOT EXISTS `formulaire_de_contact` (
 -- Structure de la table `paiement`
 --
 
-DROP TABLE IF EXISTS `paiement`;
-CREATE TABLE IF NOT EXISTS `paiement` (
-  `idPaiement` varchar(50) COLLATE utf8mb4_general_ci NOT NULL,
+CREATE TABLE `paiement` (
+  `idPaiement` varchar(50) NOT NULL,
   `Montant` decimal(5,2) NOT NULL,
   `Date_de_paiement` date NOT NULL,
-  `idCommande` varchar(50) COLLATE utf8mb4_general_ci NOT NULL,
-  PRIMARY KEY (`idPaiement`),
-  UNIQUE KEY `idCommande` (`idCommande`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  `idCommande` varchar(50) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
+
+--
+-- Index pour les tables déchargées
+--
+
+--
+-- Index pour la table `avis`
+--
+ALTER TABLE `avis`
+  ADD PRIMARY KEY (`idAvis`),
+  ADD KEY `idClient` (`idClient`);
+
+--
+-- Index pour la table `biere`
+--
+ALTER TABLE `biere`
+  ADD PRIMARY KEY (`idBiere`),
+  ADD UNIQUE KEY `Nom` (`Nom`);
+
+--
+-- Index pour la table `client`
+--
+ALTER TABLE `client`
+  ADD PRIMARY KEY (`idClient`),
+  ADD UNIQUE KEY `Adresse_email` (`Adresse_email`),
+  ADD UNIQUE KEY `Telephone` (`Telephone`);
+
+--
+-- Index pour la table `commande`
+--
+ALTER TABLE `commande`
+  ADD PRIMARY KEY (`idCommande`),
+  ADD KEY `idClient` (`idClient`);
+
+--
+-- Index pour la table `contenir`
+--
+ALTER TABLE `contenir`
+  ADD PRIMARY KEY (`idBiere`,`idCommande`),
+  ADD KEY `idCommande` (`idCommande`);
+
+--
+-- Index pour la table `formulaire_de_contact`
+--
+ALTER TABLE `formulaire_de_contact`
+  ADD PRIMARY KEY (`idFormulaire_de_contact`),
+  ADD KEY `idClient` (`idClient`);
+
+--
+-- Index pour la table `paiement`
+--
+ALTER TABLE `paiement`
+  ADD PRIMARY KEY (`idPaiement`),
+  ADD UNIQUE KEY `idCommande` (`idCommande`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
