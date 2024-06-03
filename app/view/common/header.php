@@ -38,7 +38,7 @@ if (!isset($_SESSION['age_verified']) || $_SESSION['age_verified'] !== true) {
                     <a href="nous_contacter.php">Contact</a>
                 </li>
                 <li>
-                    <a href=""><img class="panier" src="public/images/Panier_logo.png"></a>
+                    <a href="panier.php"><img class="panier" src="public/images/Panier_logo.png"></a>
                 </li>
             </ul>
 
