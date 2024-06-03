@@ -1,43 +1,13 @@
-<style>
-    /* Importer la police depuis une source externe ou localement */
-    @font-face {
-        font-family: "BodoniFLF-Bold";
-        src: url(font/BodoniFLF-Bold.ttf);
-    }
-
-    /* Appliquer la police à la balise h1 */
-    h1 {
-        font-family: "BodoniFLF-Bold", sans-serif;
-        /* Utiliser BodoniFLF-Bold, sinon une police de secours sans empattement */
-    }
-
-    /* Importer la police Robots-Black depuis une source externe ou localement */
-    @font-face {
-        font-family: "Robots-Black";
-        src: url(font/Robots-Black.ttf);
-    }
-
-    /* Appliquer la police Robots-Black à la balise h2 */
-    h2 {
-        font-family: "Robots-Black", sans-serif;
-        /* Utiliser Robots-Black, sinon une police de secours sans empattement */
-    }
-
-    /* Importer la police Roboto-Light depuis une source externe ou localement */
-    @font-face {
-        font-family: "Roboto-Light";
-        src: url(font/Roboto-Light.ttf);
-    }
-
-    /* Appliquer la police Roboto-Light à la balise h3 */
-    h3 {
-        font-family: "Roboto-Light", sans-serif;
-        /* Utiliser Roboto-Light, sinon une police de secours sans empattement */
-    }
-</style>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INFINITÉ</title>
+    <link rel="stylesheet" href="a_propos.css">
 </head>
-
-<main>
+<body>
+    <main>
         <section class="container">
             <h1>INFINITÉ</h1>
             <h2>À PROPOS</h2>
@@ -65,7 +35,8 @@
             </div>
             <video class="video_backstage" src="video_backstage.mp4" controls></video>
         </section>
-        <script>
+    </main>
+    <script>
         // Obtenir la hauteur de la fenêtre du navigateur
         const windowHeight = window.innerHeight;
 
@@ -100,5 +71,5 @@
         // Appeler la fonction pour générer les étoiles une fois que la page est chargée
         window.onload = generateStars;
     </script>
-
-    </main>
+</body>
+</html>
