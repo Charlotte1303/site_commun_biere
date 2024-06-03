@@ -6,6 +6,6 @@ creationPanier();
 // Code to validate the cart and process the order
 // ...
 
-header('Location: confirmation-commande.html');
+header('Location: confirmation-commande.php');
 exit;
 ?>
