@@ -1,7 +1,8 @@
 <?php
 
 // Fonction pour vérifier si le panier existe
-function creationPanier() {
+function creationPanier()
+{
     if (!isset($_SESSION['panier'])) {
         $_SESSION['panier'] = array();
         $_SESSION['panier']['libelleProduit'] = array();
@@ -13,7 +14,8 @@ function creationPanier() {
 }
 
 // Fonction pour ajouter un article au panier
-function ajouterArticle($libelleProduit, $qteProduit, $prixProduit) {
+function ajouterArticle($libelleProduit, $qteProduit, $prixProduit)
+{
     if (creationPanier() && !isVerrouille()) {
         $positionProduit = array_search($libelleProduit, $_SESSION['panier']['libelleProduit']);
 
@@ -30,7 +32,8 @@ function ajouterArticle($libelleProduit, $qteProduit, $prixProduit) {
 }
 
 // Fonction pour supprimer un article du panier
-function supprimerArticle($libelleProduit) {
+function supprimerArticle($libelleProduit)
+{
     if (creationPanier() && !isVerrouille()) {
         $positionProduit = array_search($libelleProduit, $_SESSION['panier']['libelleProduit']);
 
@@ -42,8 +45,9 @@ function supprimerArticle($libelleProduit) {
     }
 }
 
-// Fonction pour modifier la quantité d'un article dans le panier
-function modifierQTeArticle($libelleProduit, $nouvelleQte) {
+// Fonction pour modifier la quantité d'un article dans le panier 
+function modifierQTeArticle($libelleProduit, $nouvelleQte)
+{
     if (creationPanier() && !isVerrouille()) {
         $positionProduit = array_search($libelleProduit, $_SESSION['panier']['libelleProduit']);
 
@@ -54,7 +58,8 @@ function modifierQTeArticle($libelleProduit, $nouvelleQte) {
 }
 
 // Fonction pour calculer le montant total du panier
-function MontantGlobal() {
+function MontantGlobal()
+{
     $total = 0;
     for ($i = 0; $i < count($_SESSION['panier']['libelleProduit']); $i++) {
         $total += $_SESSION['panier']['qteProduit'][$i] * $_SESSION['panier']['prixProduit'][$i];
@@ -63,7 +68,8 @@ function MontantGlobal() {
 }
 
 // Fonction pour vérifier si le panier est verrouillé
-function isVerrouille() {
+function isVerrouille()
+{
     if (isset($_SESSION['panier']) && $_SESSION['panier']['verrou']) {
         return true;
     } else {
@@ -72,7 +78,8 @@ function isVerrouille() {
 }
 
 // Fonction pour compter le nombre d'articles différents dans le panier
-function compterArticles() {
+function compterArticles()
+{
     if (isset($_SESSION['panier'])) {
         return count($_SESSION['panier']['libelleProduit']);
     } else {
@@ -81,8 +88,7 @@ function compterArticles() {
 }
 
 // Fonction pour supprimer le panier
-function supprimePanier() {
+function supprimePanier()
+{
     unset($_SESSION['panier']);
 }
-
-?>
