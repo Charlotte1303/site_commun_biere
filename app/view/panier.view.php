@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html>
 <head>
 	<title>Panier</title>
 	<style>
@@ -72,4 +70,4 @@
 	<p><a href="vider-panier.php">Vider le panier</a></p>
 	<p><a href="valider-panier.php">Valider le panier</a></p>
 </body>
-</html>
+

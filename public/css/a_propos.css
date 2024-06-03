@@ -167,6 +167,7 @@ a.lien {
     display: block;
     margin-top: 20px;
     animation: pulse 1.5s infinite;
+    border: 1px dashed white
 }
 
 @keyframes pulse {
