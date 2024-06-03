@@ -54,24 +54,38 @@
     <!-- Ajoutez ici le contenu de votre section de confirmation -->
 </section>
 
+<script>
+        // Obtenir la hauteur de la fenêtre du navigateur
+        const windowHeight = window.innerHeight;
 
-<div class="paillette" style="left: 10%; animation-delay: 0.5s;"></div>
-<div class="paillette" style="left: 20%; animation-delay: 1s;"></div>
-<div class="paillette" style="right: 5%; animation-delay: 1.5s;"></div>
-<!-- Ajoutez plus de paillettes -->
-<div class="paillette" style="left: 30%; animation-delay: 2s;"></div>
-<div class="paillette" style="right: 15%; animation-delay: 2.5s;"></div>
-<div class="paillette" style="left: 40%; animation-delay: 3s;"></div>
-<div class="paillette" style="right: 20%; animation-delay: 3.5s;"></div>
-<div class="paillette" style="left: 50%; animation-delay: 4s;"></div>
-<div class="paillette" style="right: 25%; animation-delay: 4.5s;"></div>
-<div class="paillette" style="left: 10%; animation-delay: 0.5s;"></div>
-<div class="paillette" style="left: 20%; animation-delay: 1s;"></div>
-<div class="paillette" style="right: 5%; animation-delay: 1.5s;"></div>
-<!-- Ajoutez plus de paillettes -->
-<div class="paillette" style="left: 30%; animation-delay: 2s;"></div>
-<div class="paillette" style="right: 15%; animation-delay: 2.5s;"></div>
-<div class="paillette" style="left: 40%; animation-delay: 3s;"></div>
-<div class="paillette" style="right: 20%; animation-delay: 3.5s;"></div>
-<div class="paillette" style="left: 50%; animation-delay: 4s;"></div>
-<div class="paillette" style="right: 25%; animation-delay: 4.5s;"></div>
+        // Définir la hauteur du corps pour couvrir toute la page
+        document.body.style.height = `${windowHeight}px`;
+
+        function generateStars() {
+            const numStars = 100; // Nombre d'étoiles à générer
+            const container = document.querySelector('body');
+
+            for (let i = 0; i < numStars; i++) {
+                const star = document.createElement('div');
+                star.classList.add('star');
+
+                // Position aléatoire
+                const x = Math.random() * window.innerWidth;
+                const y = Math.random() * window.innerHeight;
+
+                // Taille aléatoire
+                const size = Math.random() * 2; // Taille de l'étoile entre 0 et 2px
+                star.style.width = `${size}px`;
+                star.style.height = `${size}px`;
+
+                // Positionner l'étoile
+                star.style.top = `${y}px`;
+                star.style.left = `${x}px`;
+
+                container.appendChild(star);
+            }
+        }
+
+        // Appeler la fonction pour générer les étoiles une fois que la page est chargée
+        window.onload = generateStars;
+    </script>
