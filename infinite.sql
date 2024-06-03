@@ -149,13 +149,22 @@ CREATE TABLE IF NOT EXISTS `contenir` (
 
 DROP TABLE IF EXISTS `formulaire_de_contact`;
 CREATE TABLE IF NOT EXISTS `formulaire_de_contact` (
-  `idFormulaire_de_contact` varchar(50) COLLATE utf8mb4_general_ci NOT NULL,
+  `idFormulaire_de_contact` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `message` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `Date_message` date NOT NULL,
-  `idClient` varchar(50) COLLATE utf8mb4_general_ci NOT NULL,
-  PRIMARY KEY (`idFormulaire_de_contact`),
+  `email` varchar(90) COLLATE utf8mb4_general_ci NOT NULL,
+  `nom` varchar(90) COLLATE utf8mb4_general_ci NOT NULL,
+  `idClient` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   KEY `idClient` (`idClient`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Déchargement des données de la table `formulaire_de_contact`
+--
+
+INSERT INTO `formulaire_de_contact` (`idFormulaire_de_contact`, `message`, `email`, `nom`, `idClient`) VALUES
+('', 'test\r\n', 'jeanvoinecharlotte@gmail.com', 'Charlotte Jeanvoine', ''),
+('', 'test2', 'jeanvoinecharlotte@gmail.com', 'Charlotte Jeanvoine', '');
+
 
 -- --------------------------------------------------------
 

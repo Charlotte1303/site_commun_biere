@@ -1,9 +1,9 @@
 <?php
 function getDatabaseConnection()
 {
-    $dsn = 'mysql:dbname=infinite;host=localhost;charset=utf8';
-    $username = 'root';
-    $password = '';
+    $dsn = 'mysql:dbname=cdce5547_2024_infinite;host=localhost;charset=utf8';
+    $username = 'cdce5547_2024_S2_admin';
+    $password = 'MMI4ever@senart';
 
     try {
         $pdo = new PDO($dsn, $username, $password);
