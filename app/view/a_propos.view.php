@@ -68,6 +68,12 @@
             <video class="video_backstage" src="video_backstage.mp4" controls></video>
         </section>
         <script>
+        // Obtenir la hauteur de la fenêtre du navigateur
+        const windowHeight = window.innerHeight;
+
+        // Définir la hauteur du corps pour couvrir toute la page
+        document.body.style.height = `${windowHeight}px`;
+
         function generateStars() {
             const numStars = 100; // Nombre d'étoiles à générer
             const container = document.querySelector('body');
