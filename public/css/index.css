@@ -123,23 +123,25 @@ header .logo{
     object-fit: cover;
 }
 
-.fleche {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    opacity: 1;
-    transition: opacity 0.5s ease;
-    z-index: 999;
-}
 
 .fleche img {
     width: 25%;
     height: auto;
 }
 
+.fleche {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    opacity: 1;
+    transition: opacity 0.5s ease; /* Ajout de la transition */
+    z-index: 999;
+}
+
 .fleche.invisible {
     opacity: 0;
 }
+
 
 footer {
     text-align: center;
