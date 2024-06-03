@@ -1,0 +1,100 @@
+body {
+    font-family: 'Roboto-Bold', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: none; /* Masque le header pour la page du panier */
+}
+
+.content {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px; /* Ajoute un padding pour la page du panier */
+}
+
+.panier-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.panier-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.panier-table th,.panier-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.panier-table th {
+    background-color: #333;
+    color: white;
+}
+
+.panier-table td {
+    background-color: #f9f9f9;
+}
+
+.panier-table td.actions {
+    text-align: center;
+}
+
+.panier-table td.actions button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.panier-table td.actions button:hover {
+    background-color: #444;
+}
+
+.panier-total {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.panier-total span {
+    color: #333;
+}
+
+.panier-buttons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.panier-buttons button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.panier-buttons button:hover {
+    background-color: #444;
+}
+
+footer {
+    display: none; /* Masque le footer pour la page du panier */
+}
+
+.background-image {
+    display: none; /* Masque l'image de fond pour la page du panier */
+}
