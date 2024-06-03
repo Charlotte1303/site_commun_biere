@@ -97,29 +97,22 @@ footer {
     justify-content: center;
 }
 
-/* Création des paillettes */
-.paillette {
-    grid-column: 1 / span 2;
+.star {
     position: absolute;
-    width: 2px;
-    height: 2px;
-    background-color: #fff; /* Couleur des paillettes */
-    border-radius: 50%; /* Pour rendre les paillettes rondes */
+    background-color: #fff;
+    border-radius: 50%;
+    animation: twinkling 5s infinite;
 }
 
-/* Animation des paillettes */
-@keyframes tomber {
+/* Animation de scintillement */
+@keyframes twinkling {
     0% {
-        transform: translateY(-100px) rotate(0deg);
         opacity: 0;
     }
-    100% {
-        transform: translateY(100vh) rotate(720deg); /* Fait tourner les paillettes en tombant */
+    50% {
         opacity: 1;
     }
-}
-
-/* Appliquer l'animation à chaque paillette */
-.paillette {
-    animation: tomber 5s linear infinite; /* Réglez la vitesse et la durée de l'animation selon vos préférences */
+    100% {
+        opacity: 0;
+    }
 }
