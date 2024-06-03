@@ -1,4 +1,5 @@
 <main>
+<script src="public/js/app.js"></script>
     <!-- carousel -->
     <div class="carousel">
         <!-- list item -->
@@ -26,7 +27,7 @@
             <div class="time"></div>
         </div>
 
-        <script src="public/js/script.js"></script>
+       
         
     </div>
 </main>

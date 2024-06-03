@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo "Nom: $nom<br>";
     echo "Email: $email<br>";
     echo "Message: $message<br>";
-
+   
     // Vérifier si les champs ne sont pas vides
     if (!empty($nom) && !empty($email) && !empty($message)) {
         try {
@@ -25,8 +25,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $stmt = $pdo->prepare("INSERT INTO formulaire_de_contact (nom, email, message) VALUES (?, ?, ?)");
             if ($stmt->execute([$nom, $email, $message])) {
                 // Redirection vers une page de confirmation ou afficher un message de confirmation
-                header("Location: confirmation.php");
-                exit();
+               echo '<meta http-equiv="refresh" content="0;url=confirmation.php" />';
+                // header("Location: confirmation.php");
+                //exit();
             } else {
                 echo "Erreur lors de l'insertion des données dans la base de données.";
             }
