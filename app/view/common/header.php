@@ -14,6 +14,7 @@ if (!isset($_SESSION['age_verified']) || $_SESSION['age_verified'] !== true) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $title ?></title>
     <link rel="stylesheet" href="public/css/<?= $css ?>">
+    <script src="public/js/script.js" defer></script>
 </head>
 
 <body>

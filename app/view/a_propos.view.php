@@ -46,7 +46,7 @@
                 uniques et ensorcelantes, nos bières vous invitent à <br>un
                 voyage gustatif et imaginaire sans limite.
             </h3>
-            <img src="public/images/étoiles.png" alt="étoiles">
+            <img src="public/images/étoiles.png" class="etoi" alt="étoiles">
             <h2 class="nouveau-titre">QUI SOMMES-NOUS ?</h2>
             <div class="photos">
                 <a href="membres.php"> <img class="photo_profil" src="public/images/photo_profil.png" alt="Photo profil 1"></a>
