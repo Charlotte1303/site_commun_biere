@@ -1,4 +1,5 @@
 <main>
+<script src="public/js/app.js"></script>
     <!-- carousel -->
     <div class="carousel">
         <!-- list item -->
@@ -15,15 +16,6 @@
                 </div>
             <?php endforeach?>
 
-            <!-- list thumnail -->
-            <div class="thumbnail">
-                <?php foreach ($bieres as $aBiere) :?>
-                    <div class="item">
-                        <img src="public/images/<?= htmlspecialchars($aBiere['Photo'])?>">
-                    </div>
-                <?php endforeach?>
-            </div>
-
             <!-- next prev -->
 
             <div class="arrows">
@@ -35,6 +27,7 @@
             <div class="time"></div>
         </div>
 
-        <script src="public/js/app.js"></script>
+       
+        
     </div>
 </main>

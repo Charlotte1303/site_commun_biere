@@ -12,4 +12,24 @@ document.addEventListener('DOMContentLoaded', function() {
             fleche.classList.remove('invisible');
         }
     });
+
+    // Get the beer list items
+    var beerListItems = document.querySelectorAll('.beer-list-item');
+
+    // Set the current index to 0
+    var currentIndex = 0;
+
+    // Set the timer for the carousel
+    setInterval(function() {
+        // Move to the next item
+        currentIndex++;
+
+        // If we reached the end of the list, wrap around to the beginning
+        if (currentIndex >= beerListItems.length) {
+            currentIndex = 0;
+        }
+
+        // Scroll to the current item
+        beerListItems[currentIndex].scrollIntoView();
+    }, 3000); // 3 seconds
 });

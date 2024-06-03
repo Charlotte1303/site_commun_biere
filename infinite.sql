@@ -131,12 +131,15 @@ CREATE TABLE `contenir` (
 -- Structure de la table `formulaire_de_contact`
 --
 
-CREATE TABLE `formulaire_de_contact` (
-  `idFormulaire_de_contact` varchar(50) NOT NULL,
-  `message` varchar(255) NOT NULL,
+DROP TABLE IF EXISTS `formulaire_de_contact`;
+CREATE TABLE IF NOT EXISTS `formulaire_de_contact` (
+  `idFormulaire_de_contact` varchar(50) COLLATE utf8mb4_general_ci NOT NULL,
+  `message` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `Date_message` date NOT NULL,
-  `idClient` varchar(50) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
+  `idClient` varchar(50) COLLATE utf8mb4_general_ci NOT NULL,
+  PRIMARY KEY (`idFormulaire_de_contact`),
+  KEY `idClient` (`idClient`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
