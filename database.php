@@ -5,10 +5,9 @@ $trombi = [
         'photo' => 'public/images/Ambre.png',
         'prenom' => 'Ambre',
         'age' => '20',
-        'descriptif' => "Hello ! Moi c'est Ambre, une rêveuse fan de cinéma et de graphisme. 🌙 🎬 ✍️ <br> Ceux qui me connaissent disent de moi que je suis un esprit créatif, mais surtout rigoureux <br> et perfectionniste ! 
-        En dehors de mes études, vous me trouverez souvent devant un bon film ou <br> en train de travailler sur un projet de design graphique. 
-        Mon rêve est de combiner mes passions <br> pour le cinéma et le graphisme pour créer des œuvres visuelles qui racontent des histoires <br> captivantes et émouvantes.
-        ",
+        'descriptif' => "Hello ! Moi c'est Ambre, j'ai 20 ans et je suis une rêveuse fan de cinéma et de graphisme. 🌙 🎬 ✍️ <br> Ceux qui me connaissent disent de moi que je suis un esprit créatif, mais surtout rigoureux <br> et perfectionniste ! 
+        <br> En dehors de mes études, vous me trouverez souvent devant un bon film ou <br> en train de travailler sur un projet de design graphique. 
+        Mon rêve est de combiner mes passions <br> pour le cinéma et le graphisme pour créer des œuvres visuelles qui racontent des histoires <br> captivantes et émouvantes. 😌✨✨",
     ],
     2 => [
         'id' => 2,
@@ -36,7 +35,7 @@ $trombi = [
         'photo' => 'public/images/Ando.png',
         'prenom' => 'Ando',
         'age' => '20',
-        'descriptif' => "Voici Andoniaina Tombozaza, mais vous pouvez l'appeler Ando. <br> Amateur de photographie, il aime capturer la beauté du monde autour de lui. <br> Passionné de volley-ball, il passe souvent son temps libre sur le terrain. <br> Il adore aussi dessiner  prenant toujours son carnet de croquis avec lui lord de ses balades. <br> Il aime également faire des sorties à vélo dans les rues de Paris. <br> Un passionné aux multiples talents, Ando profite de chaque instant.",
+        'descriptif' => "Voici Andoniaina Tombozaza, mais vous pouvez l'appeler Ando. ✨ <br> Amateur de photographie, il aime capturer la beauté du monde autour de lui. 📸 <br> Passionné de volley-ball, il passe souvent son temps libre sur le terrain. <br> Il adore aussi dessiner  prenant toujours son carnet de croquis avec lui lord de ses balades. <br> Il aime également faire des sorties à vélo dans les rues de Paris. <br> Un passionné aux multiples talents, Ando profite de chaque instant.🧘‍♂️",
     ],
     6 => [
         'id' => 6,
