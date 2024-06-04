@@ -43,6 +43,10 @@ header .logo {
     padding: 15%;
 }
 
+.menu img{
+    display: none;
+}
+
 body {
     font-family: 'Roboto-Bold', sans-serif;
     margin: 0;
@@ -84,7 +88,7 @@ main {
 
 .container {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-gap: 20px;
     text-align: center;
@@ -92,7 +96,8 @@ main {
 }
 
 .container>* {
-    grid-column: 2;
+    grid-column: 1;
+    margin-bottom: 100px;
 }
 
 .container::before {
@@ -159,6 +164,16 @@ footer {
     text-align: center;
     padding: 0;
     margin-top: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+footer .ml{
+    text-decoration: none;
+    color: white;
 }
 
 a.lien {
@@ -211,4 +226,107 @@ a.lien {
 
 .etoi {
     width: 10%;
+}
+
+@media screen and (max-width: 678px) {
+    body {
+        font-family: 'Roboto-Bold', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        color: white;
+        display: grid;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer";
+        grid-template-rows: 60px auto auto;
+        grid-template-columns: 1fr;
+        min-height: 100vh;
+    }
+
+    main {
+        grid-column: 1fr
+    }
+    
+    header {
+        grid-row: 1;
+        /* Positionne le header sur la première ligne de la grille */
+        grid-column: 1 / span 2;
+        /* Le header s'étend sur les deux colonnes */
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        margin: 10px
+    }
+
+    .menu img{
+        display:block;
+    }
+    
+    .logo{
+        max-height: 30px;
+    }
+    
+    .menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        align-content: center;
+        gap: 5px;
+    }
+    
+    .container>* {
+        grid-column: 1;
+    }
+
+    .menu ul li {
+        margin-right: 3%;
+        font-size: 1.2em;
+        transition: transform 0.3s ease;
+     
+        /* Ajoute une transition au survol */
+    }
+
+    .menu span {
+        display: none;
+    }
+    
+    .menu ul li:hover {
+        transform: translateY(-5px);
+        /* Déplace légèrement l'élément vers le haut au survol */
+    }
+
+    .menu img{
+        height: 25px;
+        width: 25px;
+    }
+    
+    .menu ul li a {
+        text-decoration: none;
+        /* Supprime la décoration des liens */
+        color: white;
+    }
+    h1{
+        font-size: 50px;
+        margin-top: 20px;
+    }
+
+    .container{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .photos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .etoi{
+        margin-bottom: 10px;
+    }
 }

@@ -1,13 +1,4 @@
-header {
-    grid-row: 1;
-    /* Positionne le header sur la première ligne de la grille */
-    grid-column: 1 / span 2;
-    /* Le header s'étend sur les deux colonnes */
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: center;
-    margin: 10px
-}
+
 
 header {
     grid-row: 1;
@@ -166,6 +157,8 @@ main .profil {
     /* Supprime la marge en haut des informations */
     margin-left: 0;
     /* Réinitialise la marge à gauche des informations */
+    margin-bottom: -50%;
+    margin-left: 30%;
 }
 
 .profil img {
@@ -215,12 +208,22 @@ main .profil {
 
 footer {
     grid-row: 5;
-    /* Positionne le footer sur la troisième ligne de la grille */
     grid-column: 1 / span 2;
-    /* Le footer s'étend sur les deux colonnes */
     text-align: center;
     padding: 0;
-    /* Réduit la taille du padding du footer */
     margin-top: 10px;
-    /* Ajoute une marge en haut du footer */
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
+
+
+footer .ml{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+

@@ -60,7 +60,9 @@ header ul li .panier {
     color: white;
 }
 
-
+.menu img{
+    display: none;
+}
 
 
 header .logo {
@@ -113,18 +115,92 @@ body main {
 }
 
 
+p{
+    font-size: x-large;
+}
 
 footer {
     grid-row: 5;
-    /* Positionne le footer sur la troisième ligne de la grille */
     grid-column: 1 / span 2;
-    /* Le footer s'étend sur les deux colonnes */
     text-align: center;
     padding: 0;
-    /* Réduit la taille du padding du footer */
     margin-top: 10px;
-    /* Ajoute une marge en haut du footer */
-    align-items: end;
+    align-items: center;
     display: flex;
     justify-content: center;
+}
+
+@media screen and (max-width: 678px) {
+    body {
+        font-family: 'Roboto-Bold', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        color: white;
+        display: grid;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer";
+        grid-template-rows: 60px auto auto;
+        grid-template-columns: 1fr;
+        min-height: 100vh;
+    }
+    
+    header {
+        grid-row: 1;
+        /* Positionne le header sur la première ligne de la grille */
+        grid-column: 1 / span 2;
+        /* Le header s'étend sur les deux colonnes */
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        margin: 10px
+    }
+
+    .menu img{
+        display:block;
+    }
+    
+    .logo{
+        max-height: 30px;
+    }
+    
+    .menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        align-content: center;
+        gap: 5px;
+    }
+    
+    .menu ul li {
+        margin-right: 3%;
+        font-size: 1.2em;
+        transition: transform 0.3s ease;
+     
+        /* Ajoute une transition au survol */
+    }
+    .menu span {
+        display: none;
+    }
+    
+    .menu ul li:hover {
+        transform: translateY(-5px);
+        /* Déplace légèrement l'élément vers le haut au survol */
+    }
+
+    .menu img{
+        height: 25px;
+        width: 25px;
+    }
+    
+    .menu ul li a {
+        text-decoration: none;
+        /* Supprime la décoration des liens */
+        color: white;
+    }
 }
