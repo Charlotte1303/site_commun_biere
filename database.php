@@ -50,9 +50,8 @@ $trombi = [
         'photo' => 'public/images/Lou.png',
         'prenom' => 'Lou',
         'age' => '19',
-        'descriptif' => "Hello, 
-        Moi c’est Lou j’ai 19 ans, grande passionnée de nature je suis incollable sur tout les animaux, curieuse je m’intéresse à la chimie et à la biologie ce qui me permet de faire plein de découvertes. Cette curiosité m’a amené sur le chemin de la bière …
-        C’est pourquoi je suis heureuse de vous présenter nos bières conçues dans un univers rêveurs aux goûts fantaisistes et aux animaux fantastiques ✨",
+        'descriptif' => "Hello, moi c’est Lou j’ai 19 ans, grande passionnée de nature je suis incollable sur <br> tous les animaux, curieuse je m’intéresse à la chimie et à la biologie ce qui me permet de faire <br> plein de découvertes. Cette curiosité m’a amené sur le chemin de Infinité.
+        C’est pourquoi, <br> je suis heureuse de vous présenter nos bières conçues dans un univers rêveurs aux goûts <br> fantaisistes et aux animaux fantastiques ✨",
     ],
     8 => [
         'id' => 8,
@@ -68,8 +67,8 @@ $trombi = [
         'prenom' => 'Ruben',
         'age' => '19',
         'descriptif' => "Salut, je m'appelle Ruben, je suis très tête en l'air mais je ne le fais pas exprès 😅
-        J'ai actuellement 19 ans, je suis très curieux et j'adore faire des découvertes 🔎 
-        Je suis toujours à la recherche de nouvelles aventures parce que je cherche constamment à en apprendre plus, et justement, la bière que nous avons créée m'a permis de découvrir le monde qui l'entoure 🍺
+        <br> J'ai actuellement 19 ans, je suis très curieux et j'adore faire des découvertes 🔎 
+        <br> Je suis toujours à la recherche de nouvelles aventures parce que je cherche constamment <br> à en apprendre plus, et justement, la bière que nous avons créée m'a permis de découvrir le monde <br> qui l'entoure 🍺
         Notre Souffle Sichuanais a été confectionnée rien que pour vous, alors à vos verres !",
     ],
 ];
