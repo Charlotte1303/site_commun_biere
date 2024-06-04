@@ -88,7 +88,7 @@ main {
 
 .container {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-gap: 20px;
     text-align: center;
@@ -96,7 +96,7 @@ main {
 }
 
 .container>* {
-    grid-column: 2;
+    grid-column: 1;
     margin-bottom: 100px;
 }
 
@@ -227,7 +227,6 @@ a.lien {
 .etoi {
     width: 10%;
 }
-<<<<<<< HEAD
 
 @media screen and (max-width: 678px) {
     body {
@@ -244,6 +243,10 @@ a.lien {
         grid-template-rows: 60px auto auto;
         grid-template-columns: 1fr;
         min-height: 100vh;
+    }
+
+    main {
+        grid-column: 1fr
     }
     
     header {
@@ -276,6 +279,10 @@ a.lien {
         gap: 5px;
     }
     
+    .container>* {
+        grid-column: 1;
+    }
+
     .menu ul li {
         margin-right: 3%;
         font-size: 1.2em;
@@ -303,6 +310,23 @@ a.lien {
         /* Supprime la décoration des liens */
         color: white;
     }
+    h1{
+        font-size: 50px;
+        margin-top: 20px;
+    }
+
+    .container{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .photos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .etoi{
+        margin-bottom: 10px;
+    }
 }
-=======
->>>>>>> 1607d2930ee60b46c71e743100697e040b67dbc6

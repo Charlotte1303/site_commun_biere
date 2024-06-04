@@ -87,20 +87,9 @@ footer {
     align-items: center;
     display: flex;
     justify-content: center;
-<<<<<<< HEAD
     align-items: center;
     }
 
-=======
-    flex-direction: column;
-}
-
-
-footer .ml{
-    text-decoration: none;
-    color: white;
-}
->>>>>>> 1607d2930ee60b46c71e743100697e040b67dbc6
 /* carousel */
 .carousel{
     height: 80vh;

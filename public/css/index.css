@@ -16,7 +16,7 @@ body {
 }
 
 header {
-    grid-row: 1;x
+    grid-row: 1;
     grid-column: 1 / span 2;
     display: grid;
     grid-template-columns: auto 1fr;
@@ -56,19 +56,10 @@ header img {
     color: white;
 }
 
-<<<<<<< HEAD
 .buttons a{
     text-decoration: none;
     color: black;
     font-weight: bold;
-=======
-
-
-
-
-header .logo{
- padding: 15%;
->>>>>>> 1607d2930ee60b46c71e743100697e040b67dbc6
 }
 
 .buttons a :hover{
@@ -185,28 +176,6 @@ footer {
     opacity: 0;
 }
 
-<<<<<<< HEAD
-=======
-
-footer {
-    grid-row: 5;
-    grid-column: 1 / span 2;
-    text-align: center;
-    padding: 0;
-    margin-top: 10px;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-
-footer .ml{
-    text-decoration: none;
-    color: white;
-}
-
->>>>>>> 1607d2930ee60b46c71e743100697e040b67dbc6
 .background-image {
     position: fixed;
     top: 0;

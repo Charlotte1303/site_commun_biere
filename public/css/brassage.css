@@ -128,7 +128,6 @@ footer {
     align-items: center;
     display: flex;
     justify-content: center;
-<<<<<<< HEAD
 }
 
 @media screen and (max-width: 678px) {
@@ -204,16 +203,4 @@ footer {
         /* Supprime la décoration des liens */
         color: white;
     }
-=======
-    flex-direction: column;
-}
-
-footer p {
-    font-size: medium;
-}
-
-footer .ml{
-    text-decoration: none;
-    color: white;
->>>>>>> 1607d2930ee60b46c71e743100697e040b67dbc6
 }
