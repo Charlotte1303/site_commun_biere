@@ -1,13 +1,4 @@
-header {
-    grid-row: 1;
-    /* Positionne le header sur la première ligne de la grille */
-    grid-column: 1 / span 2;
-    /* Le header s'étend sur les deux colonnes */
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: center;
-    margin: 10px
-}
+
 
 header {
     grid-row: 1;
@@ -232,3 +223,7 @@ footer .ml{
     text-decoration: none;
     color: white;
 }
+
+
+
+
