@@ -6,10 +6,9 @@ body {
     background-color: black;
     color: white;
     display: grid;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: 50px auto auto;
     /* Ajout des lignes de grille pour le header, le contenu et le footer */
-    grid-template-columns: 1fr 1fr;
-    /* Deux colonnes pour le contenu */
+    grid-template-columns: 1fr;
     min-height: 100vh;
     /* Pour assurer que la grille s'étend sur toute la hauteur de la fenêtre */
 }
@@ -60,77 +59,30 @@ header ul li .panier {
     color: white;
 }
 
-
-
-
 header .logo {
     padding: 15%;
 }
 
 .titre {
+    padding-top: 2%;
     grid-column: 1 / span 2;
     text-align: center;
-    padding: 20px;
+    margin-top: 5%;
 }
 
-.gauche {
-    padding: 20px;
+p {
+    grid-row: 3;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    align-content: flex-end;
-}
-
-.gauche {
-    grid-column: 1;
-    /* Section gauche dans la première colonne */
-}
-
-.droite {
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: flex-start;
-    font-weight: normal;
-    /* Enlève le style en gras */
+    justify-content: center;
     font-size: large;
-    justify-content: space-between;
-}
-
-.insta a {
-    list-style-type: none;
-    text-decoration: none;
-    /* Supprime la décoration des liens */
-    color: white;
-    margin: 18px 0px;
-}
-
-.insta {
-    padding-top: 3%;
-}
-
-.form {
-    grid-column: 1 / span 2;
-    /* Formulaire de contact s'étend sur les deux colonnes */
-    justify-self: center;
-    /* Centrer horizontalement */
-    align-self: center;
-    /* Centrer verticalement */
-    display: flex;
-    flex-direction: column;
+    padding:1%;
     align-items: center;
-    padding-bottom: 40px;
+    text-align: center;
 }
 
-.form h2 {
-    padding: 30px;
-}
-
-form#contactForm {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+footer p{
+    padding: 0%;
 }
 
 footer {
@@ -146,27 +98,7 @@ footer {
 }
 
 
-footer .ml{
+footer .ml {
     text-decoration: none;
     color: white;
-}
-
-.star {
-    position: absolute;
-    background-color: #fff;
-    border-radius: 50%;
-    animation: twinkling 5s infinite;
-}
-
-/* Animation de scintillement */
-@keyframes twinkling {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
 }

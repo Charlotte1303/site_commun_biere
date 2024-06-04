@@ -215,12 +215,18 @@ main .profil {
 
 footer {
     grid-row: 5;
-    /* Positionne le footer sur la troisième ligne de la grille */
     grid-column: 1 / span 2;
-    /* Le footer s'étend sur les deux colonnes */
     text-align: center;
     padding: 0;
-    /* Réduit la taille du padding du footer */
     margin-top: 10px;
-    /* Ajoute une marge en haut du footer */
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+footer .ml{
+    text-decoration: none;
+    color: white;
 }

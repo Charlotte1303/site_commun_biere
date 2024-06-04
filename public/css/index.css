@@ -154,14 +154,22 @@ footer {
 
 
 footer {
+    grid-row: 5;
+    grid-column: 1 / span 2;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    position: relative;
-    z-index: 1;
-    width: 100%;
+    padding: 0;
+    margin-top: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
+
+footer .ml{
+    text-decoration: none;
+    color: white;
+}
 
 .background-image {
     position: fixed;
