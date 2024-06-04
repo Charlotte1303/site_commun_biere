@@ -93,6 +93,7 @@ main {
 
 .container>* {
     grid-column: 2;
+    margin-bottom: 100px;
 }
 
 .container::before {
