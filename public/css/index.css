@@ -16,14 +16,12 @@ body {
 }
 
 header {
-    grid-row: 1;
-    /* Positionne le header sur la première ligne de la grille */
+    grid-row: 1;x
     grid-column: 1 / span 2;
-    /* Le header s'étend sur les deux colonnes */
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
-    margin: 10px
+    margin: 10px;
 }
 
 header img {
@@ -47,24 +45,30 @@ header img {
     margin-right: 3%;
     font-size: 1.2em;
     transition: transform 0.3s ease;
-    /* Ajoute une transition au survol */
 }
 
 .menu ul li:hover {
     transform: translateY(-5px);
-    /* Déplace légèrement l'élément vers le haut au survol */
 }
 
 .menu ul li a {
     text-decoration: none;
-    /* Supprime la décoration des liens */
     color: white;
 }
 
+<<<<<<< HEAD
 .buttons a{
     text-decoration: none;
     color: black;
     font-weight: bold;
+=======
+
+
+
+
+header .logo{
+ padding: 15%;
+>>>>>>> 1607d2930ee60b46c71e743100697e040b67dbc6
 }
 
 .buttons a :hover{
@@ -103,13 +107,23 @@ nav img{
     overflow-y: auto;
     height: auto;
 }
+footer {
+    grid-row: 5;
+    grid-column: 1 / span 2;
+    text-align: center;
+    padding: 0;
+    margin-top: 10px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
 
 .card-container {
     display: grid;
     grid-template-columns: repeat(3, 300px);
     grid-template-rows: repeat(2, 400px);
     gap: 8%;
-    /* perspective: 1000px; */
+    perspective: 1000px; 
     justify-content: center;
     padding: 10%;
 }
@@ -171,6 +185,28 @@ nav img{
     opacity: 0;
 }
 
+<<<<<<< HEAD
+=======
+
+footer {
+    grid-row: 5;
+    grid-column: 1 / span 2;
+    text-align: center;
+    padding: 0;
+    margin-top: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+footer .ml{
+    text-decoration: none;
+    color: white;
+}
+
+>>>>>>> 1607d2930ee60b46c71e743100697e040b67dbc6
 .background-image {
     position: fixed;
     top: 0;

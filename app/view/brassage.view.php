@@ -153,7 +153,7 @@
             </div>
         </section>
         <div class="titre">
-            <h1>Choisir une bière <font color="#EDE486">artisanale locale</font>, c'est réduire son impact <font color="#ABED86">environnemental</font> !</h1>
+            <h1>Choisir une bière <font color="#951212">artisanale locale</font>, c'est réduire son impact <font color="#F39136">environnemental</font> !</h1>
         </div>
     </main>
 </body>

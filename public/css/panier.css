@@ -1,17 +1,72 @@
 body {
     font-family: 'Roboto-Bold', sans-serif;
+    /* Changement de la police de caractères */
     margin: 0;
     padding: 0;
     background-color: black;
     color: white;
+    display: grid;
+    grid-template-rows: 50px auto auto;
+    /* Ajout des lignes de grille pour le header, le contenu et le footer */
+    grid-template-columns: 1fr 1fr;
+    /* Deux colonnes pour le contenu */
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    /* Pour assurer que la grille s'étend sur toute la hauteur de la fenêtre */
 }
 
 header {
-    display: none; /* Masque le header pour la page du panier */
+    grid-row: 1;
+    /* Positionne le header sur la première ligne de la grille */
+    grid-column: 1 / span 2;
+    /* Le header s'étend sur les deux colonnes */
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    margin: 10px
 }
+
+header img {
+    max-width: 100px;
+}
+
+header ul li .panier {
+    max-width: 40px;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menu ul li {
+    margin-right: 3%;
+    font-size: 1.2em;
+    transition: transform 0.3s ease;
+    /* Ajoute une transition au survol */
+}
+
+.menu ul li:hover {
+    transform: translateY(-5px);
+    /* Déplace légèrement l'élément vers le haut au survol */
+}
+
+.menu ul li a {
+    text-decoration: none;
+    /* Supprime la décoration des liens */
+    color: white;
+}
+
+
+
+
+header .logo {
+    padding: 15%;
+}
+
 
 .content {
     flex: 1;
@@ -92,7 +147,20 @@ header {
 }
 
 footer {
-    display: none; /* Masque le footer pour la page du panier */
+    grid-row: 5;
+    grid-column: 1 / span 2;
+    text-align: center;
+    padding: 0;
+    margin-top: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer .ml{
+    text-decoration: none;
+    color: white;
 }
 
 .background-image {

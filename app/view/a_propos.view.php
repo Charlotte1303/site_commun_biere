@@ -1,43 +1,13 @@
-<style>
-    /* Importer la police depuis une source externe ou localement */
-    @font-face {
-        font-family: "BodoniFLF-Bold";
-        src: url(font/BodoniFLF-Bold.ttf);
-    }
-
-    /* Appliquer la police à la balise h1 */
-    h1 {
-        font-family: "BodoniFLF-Bold", sans-serif;
-        /* Utiliser BodoniFLF-Bold, sinon une police de secours sans empattement */
-    }
-
-    /* Importer la police Robots-Black depuis une source externe ou localement */
-    @font-face {
-        font-family: "Robots-Black";
-        src: url(font/Robots-Black.ttf);
-    }
-
-    /* Appliquer la police Robots-Black à la balise h2 */
-    h2 {
-        font-family: "Robots-Black", sans-serif;
-        /* Utiliser Robots-Black, sinon une police de secours sans empattement */
-    }
-
-    /* Importer la police Roboto-Light depuis une source externe ou localement */
-    @font-face {
-        font-family: "Roboto-Light";
-        src: url(font/Roboto-Light.ttf);
-    }
-
-    /* Appliquer la police Roboto-Light à la balise h3 */
-    h3 {
-        font-family: "Roboto-Light", sans-serif;
-        /* Utiliser Roboto-Light, sinon une police de secours sans empattement */
-    }
-</style>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INFINITÉ</title>
+    <link rel="stylesheet" href="a_propos.css">
 </head>
-
-<main>
+<body>
+    <main>
         <section class="container">
             <h1>INFINITÉ</h1>
             <h2>À PROPOS</h2>
@@ -49,17 +19,15 @@
             <img src="public/images/étoiles.png" class="etoi" alt="étoiles">
             <h2 class="nouveau-titre">QUI SOMMES-NOUS ?</h2>
             <div class="photos">
-                <a href="membres.php"> <img class="photo_profil" src="public/images/photo_profil.png" alt="Photo profil 1"></a>
-                <a href="index.html"> <img class="photo_profil" src="public/images/photo_profil.png" alt="Photo profil 2"></a>
-                <a href="index.html"><img class="photo_profil" src="public/images/photo_profil.png" alt="Photo profil 3"></a>
-                <a href="index.html"><img class="photo_profil" src="public/images/photo_profil.png" alt="Photo profil 4"></a>
-                <a href="index.html"><img class="photo_profil" src="public/images/photo_profil.png" alt="Photo profil 5"></a>
-            </div>
-            <div class="nouvelle_photo">
-                <a href="index.html"><img class="photo_profil" src="public/images/photo_profil.png" alt="Photo profil 6"></a>
-                <a href="index.html"><img class="nouvelle_photo" src="public/images/photo_profil.png" alt="Photo profil 7"></a>
-                <a href="index.html"><img class="nouvelle_photo" src="public/images/photo_profil.png" alt="Photo profil 8"></a>
-                <a href="index.html"><img class="nouvelle_photo" src="public/images/photo_profil.png" alt="Photo profil 9"></a>
+                <a href="membres.php?id=1"><img class="photo_profil" src="public/images/Ambre.png" alt="Photo profil Ambre"></a>
+                <a href="membres.php?id=2"><img class="photo_profil" src="public/images/Charlotte.png" alt="Photo profil Charlotte"></a>
+                <a href="membres.php?id=3"><img class="photo_profil" src="public/images/Ahinoa.png" alt="Photo profil Ahinoa"></a>
+                <a href="membres.php?id=4"><img class="photo_profil" src="public/images/Alexandre.png" alt="Photo profil Alexandre"></a>
+                <a href="membres.php?id=5"><img class="photo_profil" src="public/images/Ando.png" alt="Photo profil Ando"></a>
+                <a href="membres.php?id=6"><img class="photo_profil" src="public/images/Guillaume.png" alt="Photo profil Guillaume"></a>
+                <a href="membres.php?id=7"><img class="photo_profil" src="public/images/Lou.png" alt="Photo profil Lou"></a>
+                <a href="membres.php?id=8"><img class="photo_profil" src="public/images/Maïna.png" alt="Photo profil Maïna"></a>
+                <a href="membres.php?id=9"><img class="photo_profil" src="public/images/Ruben.png" alt="Photo profil Ruben"></a>
             </div>
             <div class="jeu">
                 <h2 class="jeu2">NOTRE JEU</h2>
@@ -67,7 +35,8 @@
             </div>
             <video class="video_backstage" src="video_backstage.mp4" controls></video>
         </section>
-        <script>
+    </main>
+    <script>
         // Obtenir la hauteur de la fenêtre du navigateur
         const windowHeight = window.innerHeight;
 
@@ -102,5 +71,5 @@
         // Appeler la fonction pour générer les étoiles une fois que la page est chargée
         window.onload = generateStars;
     </script>
-
-    </main>
+</body>
+</html>

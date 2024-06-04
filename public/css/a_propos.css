@@ -97,6 +97,7 @@ main {
 
 .container>* {
     grid-column: 2;
+    margin-bottom: 100px;
 }
 
 .container::before {
@@ -163,6 +164,16 @@ footer {
     text-align: center;
     padding: 0;
     margin-top: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+footer .ml{
+    text-decoration: none;
+    color: white;
 }
 
 a.lien {
@@ -216,6 +227,7 @@ a.lien {
 .etoi {
     width: 10%;
 }
+<<<<<<< HEAD
 
 @media screen and (max-width: 678px) {
     body {
@@ -292,3 +304,5 @@ a.lien {
         color: white;
     }
 }
+=======
+>>>>>>> 1607d2930ee60b46c71e743100697e040b67dbc6
