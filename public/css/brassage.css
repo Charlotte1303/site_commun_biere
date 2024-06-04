@@ -113,6 +113,9 @@ body main {
 }
 
 
+p{
+    font-size: x-large;
+}
 
 footer {
     grid-row: 5;
@@ -126,6 +129,9 @@ footer {
     flex-direction: column;
 }
 
+footer p {
+    font-size: medium;
+}
 
 footer .ml{
     text-decoration: none;
