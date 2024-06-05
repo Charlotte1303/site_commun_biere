@@ -69,32 +69,13 @@ body {
 }
 
 
-
-body {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    /* Première colonne pour le header et le menu, deuxième colonne pour le contenu */
-    grid-template-rows: 50px auto auto;
-    /* Trois lignes pour le header, le contenu et le footer */
-    min-height: 100vh;
-    /* Hauteur minimale de la grille pour occuper toute la hauteur de la fenêtre */
-    margin: 0;
-    padding: 0;
-}
-
 @font-face {
     font-family: 'Roboto-Bold';
     src: url('roboto/Roboto-Bold.ttf') format('truetype');
     /* Ajoutez d'autres formats de police ici si nécessaire */
 }
 
-body {
-    font-family: 'Roboto-Bold', sans-serif;
-}
 
-h2 {
-    font-family: 'Roboto-Bold', sans-serif;
-}
 
 header {
     grid-row: 1;
@@ -164,8 +145,6 @@ main .profil {
 .profil img {
     max-width: 70%;
 }
-
-
 
 
 

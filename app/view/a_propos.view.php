@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INFINITÉ</title>
-    <link rel="stylesheet" href="a_propos.css">
-</head>
-<body>
-    <main>
+<main>
         <section class="container">
             <h1>INFINITÉ</h1>
             <h2>À PROPOS</h2>
@@ -20,15 +11,22 @@
             <h2 class="nouveau-titre">QUI SOMMES-NOUS ?</h2>
             <div class="photos">
                 <a href="membres.php?id=1"><img class="photo_profil" src="public/images/Ambre.png" alt="Photo profil Ambre"></a>
-                <a href="membres.php?id=2"><img class="photo_profil" src="public/images/Charlotte.png" alt="Photo profil Charlotte"></a>
-                <a href="membres.php?id=3"><img class="photo_profil" src="public/images/Ahinoa.png" alt="Photo profil Ahinoa"></a>
-                <a href="membres.php?id=4"><img class="photo_profil" src="public/images/Alexandre.png" alt="Photo profil Alexandre"></a>
-                <a href="membres.php?id=5"><img class="photo_profil" src="public/images/Ando.png" alt="Photo profil Ando"></a>
-                <a href="membres.php?id=6"><img class="photo_profil" src="public/images/Guillaume.png" alt="Photo profil Guillaume"></a>
-                <a href="membres.php?id=7"><img class="photo_profil" src="public/images/Lou.png" alt="Photo profil Lou"></a>
-                <a href="membres.php?id=8"><img class="photo_profil" src="public/images/Maïna.png" alt="Photo profil Maïna"></a>
-                <a href="membres.php?id=9"><img class="photo_profil" src="public/images/Ruben.png" alt="Photo profil Ruben"></a>
+                <a href="membres.php?id=2"><img class="photo_profil" src="public/images/charlotte.png" alt="Photo profil Charlotte"></a>
+                <a href="membres.php?id=3"><img class="photo_profil" src="public/images/ahinoa.png" alt="Photo profil Ahinoa"></a>
+                <a href="membres.php?id=4"><img class="photo_profil" src="public/images/alexandre.png" alt="Photo profil Alexandre"></a>
+                <a href="membres.php?id=5"><img class="photo_profil" src="public/images/ando.png" alt="Photo profil Ando"></a>
+                <a href="membres.php?id=6"><img class="photo_profil" src="public/images/guillaume.png" alt="Photo profil Guillaume"></a>
+                <a href="membres.php?id=7"><img class="photo_profil" src="public/images/lou.png" alt="Photo profil Lou"></a>
+                <a href="membres.php?id=8"><img class="photo_profil" src="public/images/maïna.png" alt="Photo profil Maïna"></a>
+                <a href="membres.php?id=9"><img class="photo_profil" src="public/images/ruben.png" alt="Photo profil Ruben"></a>
             </div>
+
+    <!-- Add group images here -->
+    <div class="group-photos">
+            <img src="public/images/groupe_1.png" alt="Groupe 1">
+            <img src="public/images/groupe_2.png" alt="Groupe 2">
+        </div>
+
             <div class="jeu">
                 <h2 class="jeu2">NOTRE JEU</h2>
                 <a class="lien" href="https://infiinite.alwaysdata.net/"><strong>Infinité le jeu !</strong></a>
@@ -71,5 +69,3 @@
         // Appeler la fonction pour générer les étoiles une fois que la page est chargée
         window.onload = generateStars;
     </script>
-</body>
-</html>
