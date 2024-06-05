@@ -1,7 +1,8 @@
 <?php
 //1 Données
 $title = "comptes";
-$css = "comptes.css";
+$csspage = "comptes.css";
+$cssheaderfooter = "headerfooter.css";
 
 //2 Générer Vue
 $currentPage = 'comptes';

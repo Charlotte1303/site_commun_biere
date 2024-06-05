@@ -15,6 +15,8 @@ function getBiere(int $idBiere, PDO $pdo): array
     return $bieres;
 }
 
+
+
 function getAllBieres(PDO $pdo): array
 {
     $sql = "SELECT * FROM biere";

@@ -1,7 +1,8 @@
 <?php
 //1 Données
 $title = "brassage";
-$css = "brassage.css";
+$csspage = "brassage.css";
+$cssheaderfooter = "headerfooter.css";
 
 //2 Générer Vue
 $currentPage = 'brassage';

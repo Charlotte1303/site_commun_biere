@@ -1,7 +1,8 @@
 <?php
 //1 Données
 $title = "accueil";
-$css = "index.css";
+$csspage = "index.css";
+$cssheaderfooter = "headerfooter.css";
 require_once 'app/model/connexionBDD.php';
 
 //2 Générer Vue

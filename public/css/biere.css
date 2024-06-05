@@ -1,94 +1,30 @@
-header {
-  grid-row: 1;
-  /* Positionne le header sur la première ligne de la grille */
-  grid-column: 1 / span 2;
-  /* Le header s'étend sur les deux colonnes */
-  display: grid;
-  grid-template-columns: auto 1fr;
-  align-items: center;
-  margin: 10px
-}
-
-header img {
-  max-width: 100px;
-}
-
-header ul li .panier {
-  max-width: 40px;
-}
-
-.menu ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.menu ul li {
-  margin-right: 3%;
-  font-size: 1.2em;
-  transition: transform 0.3s ease;
-  /* Ajoute une transition au survol */
-}
-
-.menu ul li:hover {
-  transform: translateY(-5px);
-  /* Déplace légèrement l'élément vers le haut au survol */
-}
-
-.menu ul li a {
-  text-decoration: none;
-  /* Supprime la décoration des liens */
-  color: white;
-}
-
-
-
-
-header .logo {
-  padding: 15%;
-}
-
-body {
-  font-family: 'Roboto-Bold', sans-serif;
-  /* Changement de la police de caractères */
-  margin: 0;
-  padding: 0;
-  background-color: black;
-  color: white;
-  display: grid;
-  grid-template-rows: auto auto auto;
-  /* Ajout des lignes de grille pour le header, le contenu et le footer */
-  grid-template-columns: 1fr 1fr;
-  /* Deux colonnes pour le contenu */
-  min-height: 100vh;
-  /* Pour assurer que la grille s'étend sur toute la hauteur de la fenêtre */
-}
-
 .beer-description {
-  font-family: Arial, sans-serif;
-  max-width: 400px;
-  margin: 40px auto;
+  max-width: 500px;
+  height: 80%;
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
-.beer-description h2 {
-  font-size: 24px;
-  margin-top: 0;
-  flex-basis: 100%;
+.texte
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.beer-description p {
+h2 {
+  font-size: 50px;
+}
+p {
   margin-bottom: 20px;
-  flex-basis: 100%;
 }
 
 .beer-description ul {
@@ -112,35 +48,28 @@ body {
   color: #999;
 }
 
-.portrait-image {
-  width: 30%;
-  margin-left: 130%;
-  margin-top: -250%;
-}
-
-footer {
-  grid-row: 5;
-  grid-column: 1 / span 2;
-  text-align: center;
-  padding: 0;
-  margin-top: 10px;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
+  .portrait-image{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  
 
 
-footer .ml{
-  text-decoration: none;
-  color: white;
+main{
+margin: auto;
+padding: auto;
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr;
+height: 100vh;
 }
 
 
 @media screen and (max-width: 678px) {
   .beer-description {
     font-family: Arial, sans-serif;
-    max-width: 200px;
+    max-width: 100%;
     margin: 10px;
     padding: 10px;
     border: 1px solid #ddd;
@@ -150,4 +79,25 @@ footer .ml{
     flex-wrap: wrap;
     flex-direction: column;
   }
+
+  main {
+    margin: auto;
+    padding: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: auto;
+}
+
+h2{
+  font-size: 30px;
+}
+
+.portrait-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
 }

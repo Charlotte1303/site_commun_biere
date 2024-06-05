@@ -1,7 +1,8 @@
 <?php
 //1 Données
 $title = "confirmation";
-$css = "confirmation.css";
+$csspage = "confirmation.css";
+
 
 //2 Générer Vue
 $currentPage = 'confirmation';

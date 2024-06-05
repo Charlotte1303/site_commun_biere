@@ -1,7 +1,8 @@
 <?php
 //1 Données
 $title = "nos_bieres";
-$css = "nosbieres.css";
+$csspage = "nosbieres.css";
+$cssheaderfooter = "headerfooter.css";
 
 if (isset($_SESSION['message'])) {
     $message = $_SESSION['message'];

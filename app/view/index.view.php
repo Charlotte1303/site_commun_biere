@@ -1,4 +1,4 @@
-<body>
+<main>
   <div class="background-image">
     <img src="public/images/etoile.gif" alt="Background Image">
   </div>
@@ -22,6 +22,7 @@
         <div class="card-back">
           <img src="public/images/story.png" alt="Story Image">
         </div>
+        
       </div>
       <div class="card">
         <div class="card-front">
@@ -64,7 +65,6 @@
         </div>
       </div>
     </div>
-  </div>
 
 
-</body>
+</main>

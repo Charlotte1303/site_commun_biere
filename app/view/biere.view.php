@@ -1,4 +1,5 @@
 <main> 
+  <div class="texte">
 <div class="beer-description">
 
   <h2><?= $bieres['Nom'] ?></h2>
@@ -15,5 +16,7 @@
   </ul>
   <p><?= $bieres['Valeurs_nutritionnelles'] ?></p>
 </div>
+  </div>
 
-<img src="public/images/<?= $bieres['Bouteille'] ?>" alt="Beer Portrait" class="portrait-image">
+<div class="portrait-image"><img src="public/images/<?= $bieres['Bouteille'] ?>" alt="Beer Portrait"></div>
+</main>

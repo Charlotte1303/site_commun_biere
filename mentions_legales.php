@@ -1,7 +1,8 @@
 <?php
 //1 Données
 $title = "mentions_legales";
-$css = "mentions_legales.css";
+$csspage = "mentions_legales.css";
+$cssheaderfooter = "headerfooter.css";
 
 //2 Générer Vue
 $currentPage = 'mentions_legales';

@@ -18,7 +18,8 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
 }
 
 $title = "Membre - " . $member['prenom'];
-$css = "membres.css";
+$csspage = "membres.css";
+$cssheaderfooter = "headerfooter.css";
 
 ob_start();
 include 'app/view/membres.view.php';
