@@ -29,6 +29,9 @@ include 'app/view/common/layout.php';
 
 <main>
     <a href="a_propos.php" class="boutonr2"><img class="fleche" src="public/images/fleche.png" alt="Flèche"></a>
+
+
+
         <div class="informations">
             <h2><?php echo $member['prenom']; ?></h2>
             <h2><?php echo $member['descriptif']; ?></h2>

@@ -132,7 +132,7 @@ h3 img {
 }
 
 .photo_profil {
-    max-width: 80px;
+    max-width: 300px;
     height: auto;
 }
 
@@ -330,3 +330,28 @@ a.lien {
         margin-bottom: 10px;
     }
 }
+
+.group-photos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    flex-wrap: wrap; /* Permettre le retour à la ligne des images */
+}
+
+.group-photos img {
+    max-width: 30%; /* Taille maximale des images */
+    margin: 10px; /* Marge entre les images */
+}
+
+/* Pour rendre les images de groupe réactives */
+@media screen and (max-width: 768px) {
+    .group-photos img {
+        max-width: 45%; /* Changer la taille maximale pour s'adapter à la largeur de l'écran */
+    }
+    
+    .group-photos img:last-child {
+        max-width: 100%; /* La dernière image occupe toute la largeur sur les écrans plus petits */
+    }
+}
+
