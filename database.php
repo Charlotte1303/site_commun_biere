@@ -5,7 +5,7 @@ $trombi = [
         'photo' => 'public/images/Ambre.png',
         'prenom' => 'Ambre',
         'age' => '20',
-        'descriptif' => "Hello ! Moi c'est Ambre, j'ai 20 ans et je suis une rêveuse fan de cinéma et de graphisme. 🌙 🎬 ✍️ <br> Ceux qui me connaissent disent de moi que je suis un esprit créatif, mais surtout rigoureux <br> et perfectionniste ! <br> En dehors de mes études, vous me trouverez souvent devant un bon film ou <br> en train de travailler sur un projet de design graphique. <br> Mon rêve est de combiner mes passions <br> pour le cinéma et le graphisme pour créer des œuvres visuelles qui racontent des histoires <br> captivantes et émouvantes. 😌✨✨",
+        'descriptif' => "Hello ! Moi c'est Ambre, j'ai 20 ans et je suis une rêveuse fan de cinéma et de graphisme. 🌙 🎬 ✍️  Ceux qui me connaissent disent de moi que je suis un esprit créatif, mais surtout rigoureux et perfectionniste !  En dehors de mes études, vous me trouverez souvent devant un bon film ou  en train de travailler sur un projet de design graphique. Mon rêve est de combiner mes passions  pour le cinéma et le graphisme pour créer des œuvres visuelles qui racontent des histoires  captivantes et émouvantes. 😌✨✨",
     ],
     2 => [
         'id' => 2,
