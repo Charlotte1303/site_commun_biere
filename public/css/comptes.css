@@ -27,14 +27,20 @@ header {
 header img {
     max-width: 100px;
 }
-
+/*  */
 /*.menu img{
     display: none;
 }*/
 
-.compte{
+
+/*  ando code / picto compte */
+
+img.compte{
     display: block;  /* code ando*/
+    width: auto;
 }
+
+/*  ando code / picto compte */
 
 .menu ul {
     list-style-type: none;
@@ -367,7 +373,7 @@ footer {
     max-width: 400px;
     box-sizing: border-box;
     margin: auto;
-    margin-top: 20vh;
+    margin-top: 16vh;
 
 }
 
@@ -378,7 +384,10 @@ footer {
 h2 {
     margin-top: 0;
     text-align: center;
-}
+    font-style: normal;
+    font-size: 250%;
+
+}   
 
 p {
     margin-bottom: 20px;
@@ -386,6 +395,7 @@ p {
 
 .form-group {
     margin-bottom: 15px;
+    color:white;
 }
 
 label {
@@ -404,7 +414,7 @@ input[type="text"], input[type="email"], input[type="password"] {
 input[type="submit"] {
     width: 100%;
     padding: 10px;
-    background-color: #007BFF;
+    background-color: #353635;
     border: none;
     border-radius: 4px;
     color: white;
@@ -413,7 +423,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #353635;
 }
 
 span {
@@ -435,4 +445,15 @@ span {
         padding: 8px;
     }
 }
-  /***************************************************************/
+
+
+
+/***************************************************************/
+button{
+
+    margin-left: 34%;
+    background-color: #353635;
+    border-radius: 4px;
+
+}
+/*******************************************

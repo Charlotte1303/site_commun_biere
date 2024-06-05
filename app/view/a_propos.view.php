@@ -1,4 +1,8 @@
+<!DOCTYPE html>
+<html lang="fr">
+
 <main>
+
     <h1>INFINITÉ</h1>
     <h2>À PROPOS</h2>
     <h3>Infinité, c'est l'histoire de neuf jeunes passionnés par la bière et l'univers fantastique.
@@ -39,8 +43,10 @@
 </main>
 
 <script>
-    // Obtenir la hauteur de la fenêtre du navigateur
-    const windowHeight = window.innerHeight;
+   
+        // Obtenir la hauteur de la fenêtre du navigateur
+        const windowHeight = window.innerHeight;
+
 
     // Définir la hauteur du corps pour couvrir toute la page
     document.body.style.height = `${windowHeight}px`;

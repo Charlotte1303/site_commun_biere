@@ -17,6 +17,14 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
     exit;
 }
 
+require_once "app/model/connexionBDD.php";
+require_once "app/model/biere.model.php";
+$idMembre = $_GET['id'];
+
+$pdo = getDatabaseConnection();
+$membre = getBiere($idBiere, $pdo);
+
+
 $title = "Membre - " . $member['prenom'];
 $csspage = "membres.css";
 $cssheaderfooter = "headerfooter.css";

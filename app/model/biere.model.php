@@ -15,7 +15,20 @@ function getBiere(int $idBiere, PDO $pdo): array
     return $bieres;
 }
 
+function getMembre(int $idMembre, PDO $pdo): array
+{
+    $sql = "SELECT * FROM Membres WHERE idMembre=:id";
+    $stmt = $pdo->prepare($sql);
+    $stmt->bindParam(':id', $idMembre, PDO::PARAM_INT);
+    $stmt->execute();
 
+    if (!$idMembre = $stmt->fetch()) {
+        $_SESSION['message'] = "Le membre n'existe pas!";
+        header('Location: trombinoscope.php');
+        exit;
+    }
+    return $membre;
+}
 
 function getAllBieres(PDO $pdo): array
 {
