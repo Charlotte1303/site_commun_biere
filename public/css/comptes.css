@@ -395,6 +395,7 @@ p {
 
 .form-group {
     margin-bottom: 15px;
+    color:white;
 }
 
 label {
@@ -413,7 +414,7 @@ input[type="text"], input[type="email"], input[type="password"] {
 input[type="submit"] {
     width: 100%;
     padding: 10px;
-    background-color: #38cc2d;
+    background-color: #353635;
     border: none;
     border-radius: 4px;
     color: white;
@@ -422,7 +423,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #38cc2d;
+    background-color: #353635;
 }
 
 span {
@@ -451,7 +452,7 @@ span {
 button{
 
     margin-left: 34%;
-    background-color: #38cc2d;
+    background-color: #353635;
     border-radius: 4px;
 
 }
