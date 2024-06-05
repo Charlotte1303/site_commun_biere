@@ -4,7 +4,7 @@ include 'db_utilisateur.php';
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "db_compte_utilisateur";
+$dbname = "infinite";
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 $nom = $email = $mot_de_passe = "";
