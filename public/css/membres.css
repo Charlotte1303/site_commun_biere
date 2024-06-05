@@ -1,16 +1,5 @@
 
 
-header {
-    grid-row: 1;
-    /* Positionne le header sur la première ligne de la grille */
-    grid-column: 1 / span 2;
-    /* Le header s'étend sur les deux colonnes */
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: center;
-    margin: 10px
-}
-
 header img {
     max-width: 100px;
 }
@@ -46,9 +35,6 @@ header ul li .panier {
     color: white;
 }
 
-
-
-
 header .logo{
  padding: 15%;
 }
@@ -69,32 +55,13 @@ body {
 }
 
 
-
-body {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    /* Première colonne pour le header et le menu, deuxième colonne pour le contenu */
-    grid-template-rows: 50px auto auto;
-    /* Trois lignes pour le header, le contenu et le footer */
-    min-height: 100vh;
-    /* Hauteur minimale de la grille pour occuper toute la hauteur de la fenêtre */
-    margin: 0;
-    padding: 0;
-}
-
 @font-face {
     font-family: 'Roboto-Bold';
     src: url('roboto/Roboto-Bold.ttf') format('truetype');
     /* Ajoutez d'autres formats de police ici si nécessaire */
 }
 
-body {
-    font-family: 'Roboto-Bold', sans-serif;
-}
 
-h2 {
-    font-family: 'Roboto-Bold', sans-serif;
-}
 
 header {
     grid-row: 1;
@@ -153,18 +120,15 @@ main .profil {
     /* Positionne les informations dans la deuxième colonne de la sous-grille */
     justify-self: start;
     /* Aligne les informations à gauche */
-    margin-top: 0;
-    /* Supprime la marge en haut des informations */
-    margin-left: 0;
     /* Réinitialise la marge à gauche des informations */
-    margin-bottom: -50%;
-    margin-left: 30%;
+    margin-bottom: 0%;
+    margin-left: 10%;
 }
 
 .profil img {
-    max-width: 70%;
+    width: 80%; /* Ajuste la largeur de l'image pour s'adapter à la taille maximale du conteneur */
+    margin-left: 30%; /* Ajuste la marge gauche pour décaler l'image vers la droite */
 }
-
 
 
 
@@ -200,10 +164,6 @@ main .profil {
     animation: tomber 5s linear infinite;
     /* Réglez la vitesse et la durée de l'animation selon vos préférences */
 }
-
-
-
-
 
 
 footer {

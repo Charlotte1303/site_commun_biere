@@ -2,6 +2,7 @@
 //1 Données
 $title = "brassage";
 $css = "brassage.css";
+$cssheaderfooter = "headerfooter.css";
 
 //2 Générer Vue
 $currentPage = 'brassage';

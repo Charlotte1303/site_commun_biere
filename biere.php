@@ -10,6 +10,7 @@ if (empty($_GET['id']) || !ctype_digit($_GET['id']) || $_GET['id'] < 1) {
 
 $title = "biere";
 $css = "biere.css";
+$cssheaderfooter = "headerfooter.css";
 
 require_once "app/model/connexionBDD.php";
 require_once "app/model/biere.model.php";
