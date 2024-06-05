@@ -134,17 +134,16 @@ main .profil {
     /* Positionne les informations dans la deuxième colonne de la sous-grille */
     justify-self: start;
     /* Aligne les informations à gauche */
-    margin-top: 0;
-    /* Supprime la marge en haut des informations */
-    margin-left: 0;
     /* Réinitialise la marge à gauche des informations */
-    margin-bottom: -50%;
-    margin-left: 30%;
+    margin-bottom: 0%;
+    margin-left: 10%;
 }
 
 .profil img {
-    max-width: 70%;
+    width: 80%; /* Ajuste la largeur de l'image pour s'adapter à la taille maximale du conteneur */
+    margin-left: 30%; /* Ajuste la marge gauche pour décaler l'image vers la droite */
 }
+
 
 
 

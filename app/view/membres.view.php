@@ -16,16 +16,15 @@ $membre = isset($trombi[$id]) ? $trombi[$id] : null;
     <section class="profil">
         <div class="identite">
             <?php if ($membre) : ?>
-                <img src="<?php echo htmlspecialchars($membre['photo']); ?>" alt="Photo de profil de <?php echo htmlspecialchars($membre['prenom']); ?>">
+                <img class="photo-profil" src="<?php echo htmlspecialchars($membre['photo']); ?>" alt="Photo de profil de <?php echo htmlspecialchars($membre['prenom']); ?>">
             <?php else : ?>
                 <p>Membre non trouvé</p>
             <?php endif; ?>
         </div>
-        <main>
-            <div class="informations">
-                <h2><?php echo $member['prenom']; ?></h2>
-                <h2><?php echo $member['descriptif']; ?></h2>
-                <h2><?php echo $member['age']; ?> ans</h2>
-            </div>
+        <div class="informations">
+            <h2><?php echo $membre['prenom']; ?></h2>
+            <h2><?php echo $membre['descriptif']; ?></h2>
+            <h2><?php echo $membre['age']; ?> ans</h2>
+        </div>
     </section>
 </main>
