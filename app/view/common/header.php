@@ -10,14 +10,16 @@ if (!isset($_SESSION['age_verified']) || $_SESSION['age_verified'] !== true) {
 
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= htmlspecialchars($title) ?></title>
     <link rel="stylesheet" href="public/css/<?= htmlspecialchars($css) ?>">
     <script src="public/js/script.js" defer></script>
-    
+
 </head>
+
 <body>
     <header>
         <a href="index.php"><img class="logo" src="public/images/Logo.png" alt="Logo"></a>
@@ -29,6 +31,7 @@ if (!isset($_SESSION['age_verified']) || $_SESSION['age_verified'] !== true) {
                 <li><a href="brassage.php"><span>Brassage</span><img src="public/images/labo.png" /></a></li>
                 <li><a href="nous_contacter.php"><span>Contact</span><img src="public/images/tel.png" /></a></li>
                 <li><a href="panier.php"><img class="panier" src="public/images/Panier_logo.png" alt="Panier"></a></li>
+                <li><a href="comptes.php"><img class="compte" src="public/images/photo_profil.png" alt="Photo de profil" alt="tête"></a></li>
             </ul>
         </nav>
     </header>
