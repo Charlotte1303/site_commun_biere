@@ -2,6 +2,7 @@
 //1 Données
 $title = "confirmation";
 $css = "confirmation.css";
+$cssheaderfooter = "headerfooter.css";
 
 //2 Générer Vue
 $currentPage = 'confirmation';

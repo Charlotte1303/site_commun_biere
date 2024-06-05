@@ -6,6 +6,7 @@ creationPanier();
 //1 Données
 $title = "validation";
 $css = "valider-panier.css";
+$cssheaderfooter = "headerfooter.css";
 
 //2 Générer Vue
 $currentPage = 'confirmation_commande';

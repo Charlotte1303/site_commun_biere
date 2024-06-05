@@ -2,6 +2,7 @@
 //1 Données
 $title = "a_propos";
 $css = "a_propos.css";
+$cssheaderfooter = "headerfooter.css";
 
 //2 Générer Vue
 ob_start();

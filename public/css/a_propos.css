@@ -43,7 +43,7 @@ header .logo {
     padding: 15%;
 }
 
-.menu img{
+.menu img {
     display: none;
 }
 
@@ -126,19 +126,25 @@ h3 img {
 
 .photos {
     display: grid;
-    grid-template-columns: repeat(5, auto); /* Les cinq premières colonnes ont une largeur automatique */
-    gap: 1px; /* Espacement entre les images */
+    grid-template-columns: repeat(5, auto);
+    /* Les cinq premières colonnes ont une largeur automatique */
+    gap: 1px;
+    /* Espacement entre les images */
 }
 
 .photo_membre {
-        width: 50%; /* Taille fixe pour la largeur */
-        object-fit: cover; /* Recadre l'image pour remplir le conteneur tout en conservant ses proportions */
-        border-radius: 50%; /* Optionnel : pour donner un effet circulaire */
-    }
+    width: 50%;
+    /* Taille fixe pour la largeur */
+    object-fit: cover;
+    /* Recadre l'image pour remplir le conteneur tout en conservant ses proportions */
+    border-radius: 50%;
+    /* Optionnel : pour donner un effet circulaire */
+}
 
 /* Ajouter une marge supplémentaire après la cinquième photo */
 .photos a:nth-child(5) {
-    margin-bottom: 40px; /* Ajustez cette valeur selon vos besoins */
+    margin-bottom: 40px;
+    /* Ajustez cette valeur selon vos besoins */
 
 }
 
@@ -163,7 +169,7 @@ footer {
 }
 
 
-footer .ml{
+footer .ml {
     text-decoration: none;
     color: white;
 }
@@ -181,9 +187,11 @@ a.lien {
     0% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.1);
     }
+
     100% {
         transform: scale(1);
     }
@@ -208,9 +216,11 @@ a.lien {
     0% {
         opacity: 0;
     }
+
     50% {
         opacity: 1;
     }
+
     100% {
         opacity: 0;
     }
@@ -240,7 +250,7 @@ a.lien {
     main {
         grid-column: 1fr
     }
-    
+
     header {
         grid-row: 1;
         /* Positionne le header sur la première ligne de la grille */
@@ -252,14 +262,14 @@ a.lien {
         margin: 10px
     }
 
-    .menu img{
-        display:block;
+    .menu img {
+        display: block;
     }
-    
-    .logo{
+
+    .logo {
         max-height: 30px;
     }
-    
+
     .menu ul {
         list-style-type: none;
         margin: 0;
@@ -270,7 +280,7 @@ a.lien {
         align-content: center;
         gap: 5px;
     }
-    
+
     .container>* {
         grid-column: 1;
     }
@@ -279,46 +289,55 @@ a.lien {
         margin-right: 3%;
         font-size: 1.2em;
         transition: transform 0.3s ease;
-     
+
         /* Ajoute une transition au survol */
     }
 
     .menu span {
         display: none;
     }
-    
+
     .menu ul li:hover {
         transform: translateY(-5px);
         /* Déplace légèrement l'élément vers le haut au survol */
     }
 
-    .menu img{
+    .menu img {
         height: 25px;
         width: 25px;
     }
-    
+
     .menu ul li a {
         text-decoration: none;
         /* Supprime la décoration des liens */
         color: white;
     }
-    h1{
+
+    h1 {
         font-size: 50px;
         margin-top: 20px;
     }
 
-    .container{
+    .container {
         margin: 0;
         padding: 0;
         width: 100%;
     }
-    .photos{
-        display: flex;
+
+    .photos {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        grid-template-rows: auto auto;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
     }
-    .etoi{
+
+    .photos a:nth-child(n+6) {
+        grid-column: span 2; /* Chaque image occupe deux colonnes */
+    }
+
+    .etoi {
         margin-bottom: 10px;
     }
 }
@@ -328,23 +347,27 @@ a.lien {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    flex-wrap: wrap; /* Permettre le retour à la ligne des images */
-    gap:10%;
+    flex-wrap: wrap;
+    /* Permettre le retour à la ligne des images */
+    gap: 10%;
 }
 
 .group-photos img {
-    max-width: 30%; /* Taille maximale des images */
-    margin: 10px; /* Marge entre les images */
+    max-width: 30%;
+    /* Taille maximale des images */
+    margin: 10px;
+    /* Marge entre les images */
 }
 
 /* Pour rendre les images de groupe réactives */
 @media screen and (max-width: 768px) {
     .group-photos img {
-        max-width: 45%; /* Changer la taille maximale pour s'adapter à la largeur de l'écran */
+        max-width: 45%;
+        /* Changer la taille maximale pour s'adapter à la largeur de l'écran */
     }
-    
+
     .group-photos img:last-child {
-        max-width: 100%; /* La dernière image occupe toute la largeur sur les écrans plus petits */
+        max-width: 100%;
+        /* La dernière image occupe toute la largeur sur les écrans plus petits */
     }
 }
-
