@@ -27,14 +27,20 @@ header {
 header img {
     max-width: 100px;
 }
-
+/*  */
 /*.menu img{
     display: none;
 }*/
 
-.compte{
+
+/*  ando code / picto compte */
+
+img.compte{
     display: block;  /* code ando*/
+    width: auto;
 }
+
+/*  ando code / picto compte */
 
 .menu ul {
     list-style-type: none;

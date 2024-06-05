@@ -1,8 +1,8 @@
 <?php
 function getDatabaseConnection()
 {
-    $dsn = 'mysql:dbname=infinite;host=localhost;charset=utf8';
-    $username = 'root';
+    $dsn = 'mysql:dbname=infinite;host=localhost;charset=utf8';/*dbname=infinite; */
+    $username = 'root';/*root*/
     $password = '';
 
     try {
