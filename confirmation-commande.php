@@ -2,6 +2,7 @@
 //1 Données
 $title = "confirmation-commande";
 $css = "confirmation-commande.css";
+$cssheaderfooter = "headerfooter.css";
 require_once 'app/model/connexionBDD.php';
 
 //2 Générer Vue

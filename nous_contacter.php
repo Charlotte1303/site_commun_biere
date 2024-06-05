@@ -42,6 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 //1 Données
 $title = "nous_contacter";
 $css = "nous_contacter.css";
+$cssheaderfooter = "headerfooter.css";
 
 //2 Générer Vue
 $currentPage = 'nous_contacter';

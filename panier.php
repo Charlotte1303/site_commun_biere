@@ -2,6 +2,7 @@
 // 1. Données
 $title = "Panier";
 $css = "panier.css";
+$cssheaderfooter = "headerfooter.css";
 require_once 'app/model/connexionBDD.php';
 
 // 2. Générer la vue
