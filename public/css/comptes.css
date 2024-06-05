@@ -367,7 +367,7 @@ footer {
     max-width: 400px;
     box-sizing: border-box;
     margin: auto;
-    margin-top: 20vh;
+    margin-top: 16vh;
 
 }
 
@@ -378,7 +378,10 @@ footer {
 h2 {
     margin-top: 0;
     text-align: center;
-}
+    font-style: normal;
+    font-size: 250%;
+
+}   
 
 p {
     margin-bottom: 20px;
@@ -404,7 +407,7 @@ input[type="text"], input[type="email"], input[type="password"] {
 input[type="submit"] {
     width: 100%;
     padding: 10px;
-    background-color: #007BFF;
+    background-color: #38cc2d;
     border: none;
     border-radius: 4px;
     color: white;
@@ -413,7 +416,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #38cc2d;
 }
 
 span {
@@ -435,4 +438,15 @@ span {
         padding: 8px;
     }
 }
-  /***************************************************************/
+
+
+
+/***************************************************************/
+button{
+
+    margin-left: 34%;
+    background-color: #38cc2d;
+    border-radius: 4px;
+
+}
+/*******************************************
