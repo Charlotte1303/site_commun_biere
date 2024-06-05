@@ -230,6 +230,7 @@ a.lien {
     width: 10%;
 }
 
+
 @media screen and (max-width: 678px) {
     body {
         font-family: 'Roboto-Bold', sans-serif;
@@ -341,7 +342,6 @@ a.lien {
         margin-bottom: 10px;
     }
 }
-
 .group-photos {
     display: flex;
     justify-content: center;
@@ -371,3 +371,4 @@ a.lien {
         /* La dernière image occupe toute la largeur sur les écrans plus petits */
     }
 }
+

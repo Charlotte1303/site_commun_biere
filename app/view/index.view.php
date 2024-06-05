@@ -5,7 +5,7 @@
 
   <div class="content">
     <main class="logo2">
-      <img src="public/images/Logo.png">
+      <img id="logo_centre " src="public/images/Logo.png">
     </main>
 
     <div class="fleche" id="fleche">
