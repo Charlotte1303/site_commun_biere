@@ -11,3 +11,4 @@ $content = ob_get_clean();
 //3 inclure le layout
 
 include 'app/view/common/layout.php';  
+

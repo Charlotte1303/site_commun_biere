@@ -126,28 +126,20 @@ h3 img {
 
 .photos {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 2px;
-    justify-items: center;
+    grid-template-columns: repeat(5, auto); /* Les cinq premières colonnes ont une largeur automatique */
+    gap: 1px; /* Espacement entre les images */
 }
 
-.photo_profil {
-    max-width: 300px;
-    height: auto;
-}
+.photo_membre {
+        width: 50%; /* Taille fixe pour la largeur */
+        object-fit: cover; /* Recadre l'image pour remplir le conteneur tout en conservant ses proportions */
+        border-radius: 50%; /* Optionnel : pour donner un effet circulaire */
+    }
 
-.nouvelle_photo {
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    justify-items: center;
-    align-items: stretch;
-    gap: 1px;
-    justify-content: center;
-}
+/* Ajouter une marge supplémentaire après la cinquième photo */
+.photos a:nth-child(5) {
+    margin-bottom: 40px; /* Ajustez cette valeur selon vos besoins */
 
-.nouvelle_photo img {
-    max-width: 80px;
-    height: auto;
 }
 
 .video_backstage {
@@ -337,6 +329,7 @@ a.lien {
     align-items: center;
     margin-top: 20px;
     flex-wrap: wrap; /* Permettre le retour à la ligne des images */
+    gap:10%;
 }
 
 .group-photos img {
