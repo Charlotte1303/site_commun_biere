@@ -1,31 +1,14 @@
 <?php
-include 'database.php';
-
-// Vérifier si l'ID est passé en paramètre d'URL
-if (isset($_GET['id']) && is_numeric($_GET['id'])) {
-    $id = $_GET['id'];
-    
-    // Vérifier si l'ID existe dans la base de données
-    if (isset($trombi[$id])) {
-        $member = $trombi[$id];
-    } else {
-        echo "Membre non trouvé.";
-        exit;
-    }
-} else {
-    echo "ID invalide.";
-    exit;
-}
 
 require_once "app/model/connexionBDD.php";
 require_once "app/model/biere.model.php";
 $idMembre = $_GET['id'];
 
 $pdo = getDatabaseConnection();
-$membre = getBiere($idBiere, $pdo);
+$membres = getMembre($idMembre, $pdo);
 
 
-$title = "Membre - " . $member['prenom'];
+$title = "Membre - " . $membres['Prenom'];
 $csspage = "membres.css";
 $cssheaderfooter = "headerfooter.css";
 

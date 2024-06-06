@@ -22,12 +22,12 @@ function getMembre(int $idMembre, PDO $pdo): array
     $stmt->bindParam(':id', $idMembre, PDO::PARAM_INT);
     $stmt->execute();
 
-    if (!$idMembre = $stmt->fetch()) {
+    if (!$membres = $stmt->fetch()) {
         $_SESSION['message'] = "Le membre n'existe pas!";
         header('Location: trombinoscope.php');
         exit;
     }
-    return $membre;
+    return $membres;
 }
 
 function getAllBieres(PDO $pdo): array

@@ -5,12 +5,12 @@
     </div>
     <section class="profil">
         <div class="identite">
-                <img class="photo-profil" src="<?($membre['photo']); ?>" alt="Photo de profil de <?($membre['prenom']); ?>">
+                <img class="photo-profil" src="<?=$membres['photo']; ?>" alt="Photo de profil de <?=$membres['Prenom']; ?>">
         </div>
         <div class="informations">
-            <h2><?$membre['prenom']; ?></h2>
-            <h2><?$membre['descriptif']; ?></h2>
-            <h2><?$membre['age']; ?></h2>
+            <h2><?=$membres['Prenom']; ?></h2>
+            <h2><?=$membres['Description']; ?></h2>
+            <h2><?=$membres['Age']; ?></h2>
         </div>
     </section>
 </main>
