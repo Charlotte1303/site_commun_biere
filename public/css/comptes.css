@@ -1,32 +1,3 @@
-body {
-    font-family: 'Roboto-Bold', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: black;
-    color: white;
-    display: grid;
-    grid-template-areas:
-        "header"
-        "main"
-        "footer";
-    grid-template-rows: 50px auto auto;
-    grid-template-columns: 1fr;
-    min-height: 100vh;
-    width: 100%;
-}
-
-header {
-    grid-row: 1;
-    grid-column: 1 / span 2;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: center;
-    margin: 10px;
-}
-
-header img {
-    max-width: 100px;
-}
 /*  */
 /*.menu img{
     display: none;
@@ -41,54 +12,6 @@ img.compte{
 }
 
 /*  ando code / picto compte */
-
-.menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.menu ul li {
-    margin-right: 3%;
-    font-size: 1.2em;
-    transition: transform 0.3s ease;
-}
-
-.menu ul li:hover {
-    transform: translateY(-5px);
-}
-
-.menu ul li a {
-    text-decoration: none;
-    color: white;
-}
-
-.buttons a{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-
-.buttons a :hover{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    background-color: #ffffff83;
-}
-
-header .logo{
- padding: 15%;
-}
-
-footer {
-    grid-area: footer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    }
 
 nav img{
     display: none;
@@ -107,16 +30,6 @@ nav img{
     flex: 1;
     overflow-y: auto;
     height: auto;
-}
-footer {
-    grid-row: 5;
-    grid-column: 1 / span 2;
-    text-align: center;
-    padding: 0;
-    margin-top: 10px;
-    display: flex;
-    align-items: end;
-    justify-content: center;
 }
 
 .card-container {
@@ -204,84 +117,7 @@ footer {
 
 @media screen and (max-width: 768px) { 
 
-        body {
-            font-family: 'Roboto-Bold', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: black;
-            color: white;
-            display: grid;
-            grid-template-areas:
-                "header"
-                "main"
-                "footer";
-            grid-template-rows: 60px auto auto;
-            grid-template-columns: 1fr;
-            min-height: 100vh;
-        }
-        
-        header {
-            grid-row: 1;
-            /* Positionne le header sur la première ligne de la grille */
-            grid-column: 1 / span 2;
-            /* Le header s'étend sur les deux colonnes */
-            display: grid;
-            grid-template-columns: auto 1fr;
-            align-items: center;
-            margin: 10px
-        }
     
-        .menu img{
-            display:block;
-        }
-        
-        .logo{
-            max-height: 30px;
-        }
-
-        .content {
-            flex: 1;
-            overflow-y: auto;
-            height: auto;
-        }
-        
-        .menu ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            align-content: center;
-            gap: 5px;
-        }
-        
-        .menu ul li {
-            margin-right: 3%;
-            font-size: 1.2em;
-            transition: transform 0.3s ease;
-         
-            /* Ajoute une transition au survol */
-        }
-        .menu span {
-            display: none;
-        }
-        
-        .menu ul li:hover {
-            transform: translateY(-5px);
-            /* Déplace légèrement l'élément vers le haut au survol */
-        }
-    
-        .menu img{
-            height: 25px;
-            width: 25px;
-        }
-        
-        .menu ul li a {
-            text-decoration: none;
-            /* Supprime la décoration des liens */
-            color: white;
-        }
 
     /* Styles pour les écrans plus petits que 768px (tablettes) */
     .card-container {

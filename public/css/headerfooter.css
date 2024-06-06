@@ -111,6 +111,11 @@ footer p {
         max-height: 30px;
     }
 
+    .menu .panier, .menu .compte {
+        display: block !important;
+        width: 100%; 
+    }
+
     footer {
         display: grid;
         grid-template-columns: 1fr;

@@ -2,6 +2,7 @@
 //1 Données
 $title = "confirmation";
 $csspage = "confirmation.css";
+$cssheaderfooter = "headerfooter.css";
 
 
 //2 Générer Vue
