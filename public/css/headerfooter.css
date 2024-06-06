@@ -64,6 +64,9 @@ header img {
 header .logo {
     padding: 15%;
 }
+span{
+    font-size: 25px;
+}
 
 footer {
     display: grid;
