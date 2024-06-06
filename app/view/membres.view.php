@@ -1,16 +1,19 @@
 <main>
-    <a href="a_propos.php" class="boutonr2"><img class="fleche" src="public/images/fleche.png" alt="Flèche"></a>
+    <div class="fleche">
+        <a href="a_propos.php"><img src="public/images/fleche.png" alt="Flèche"></a>
+    </div>
+
     <div class="titre">
         <h2>QUI SOMMES-NOUS ?</h2>
     </div>
-    <section class="profil">
-        <div class="identite">
-                <img class="photo-profil" src="<?=$membres['photo']; ?>" alt="Photo de profil de <?=$membres['Prenom']; ?>">
-        </div>
-        <div class="informations">
-            <h2><?=$membres['Prenom']; ?></h2>
-            <h2><?=$membres['Description']; ?></h2>
-            <h2><?=$membres['Age']; ?></h2>
-        </div>
-    </section>
+    <div class="photo">
+        <img class="photo-profil" src="public/images/<?= $membres['photo']; ?>" alt="Photo de profil de <?= $membres['Prenom']; ?>">
+    </div>
+    <div class="texte">
+
+        <h2><?= $membres['Prenom']; ?></h2>
+        <h3><?= $membres['Description']; ?></h3>
+        <h3><?= $membres['Age']; ?> ans</h3>
+    </div>
+    </div>
 </main>

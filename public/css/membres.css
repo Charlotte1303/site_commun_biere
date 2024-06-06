@@ -1,136 +1,65 @@
-
-
-header img {
-    max-width: 100px;
-}
-
-header ul li .panier {
-    max-width: 40px;
-}
-
-.menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.menu ul li {
-    margin-right: 3%;
-    font-size: 1.2em;
-    transition: transform 0.3s ease;
-    /* Ajoute une transition au survol */
-}
-
-.menu ul li:hover {
-    transform: translateY(-5px);
-    /* Déplace légèrement l'élément vers le haut au survol */
-}
-
-.menu ul li a {
-    text-decoration: none;
-    /* Supprime la décoration des liens */
-    color: white;
-}
-
-header .logo{
- padding: 15%;
-}
-
-body {
-    font-family: 'Roboto-Bold', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: black;
-    color: white;
-    display: grid;
-    grid-template-rows: 50px auto auto;
-    /* Ajout des lignes de grille pour le header, le contenu et le footer */
-    grid-template-columns: 1fr 1fr;
-    /* Deux colonnes pour le contenu */
-    min-height: 100vh;
-    /* Pour assurer que la grille s'étend sur toute la hauteur de la fenêtre */
-}
-
-
-@font-face {
-    font-family: 'Roboto-Bold';
-    src: url('roboto/Roboto-Bold.ttf') format('truetype');
-    /* Ajoutez d'autres formats de police ici si nécessaire */
-}
-
-
-
-header {
-    grid-row: 1;
-    /* Positionne le header sur la première ligne de la grille */
-    grid-column: 1 / span 2;
-    /* Le header s'étend sur les deux colonnes */
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: center;
-    margin: 30px;
-    position: relative;
-}
-
-
 main {
-    grid-row: 2;
-    /* Positionne main sur la deuxième ligne */
-    grid-column: 1 / span 2;
-    /* Etend main sur les deux colonnes */
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 5% 1fr 1fr;
     align-items: center;
     align-content: space-between;
-    gap: 0px;
-    /* Espacement entre les éléments */
+    gap: 5px;
+    grid-template-rows: auto 1fr;
+    height: 100vh;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
-.titre {
-    grid-column: 1 / span 2;
-    /* Etend le titre sur les deux colonnes */
+
+.photo {
+    grid-row: 2;
+    grid-column: 2;
     text-align: center;
-    padding: 20px;
-    margin-top: -80px;
 }
 
-.fleche {
-    grid-column: 1;
-    /* Positionne la flèche dans la première colonne */
-    justify-self: start;
-    /* Aligne la flèche à gauche */
-    margin: 80px 30px;
-    /* Marge autour de la flèche */
-    width: 70px;
-    height: auto;
+.texte{
+    grid-row: 2;
+    grid-column: 3;
+    padding: 15px;
 }
 
-main .profil {
-    display: flex;
-    align-items: center;
-    grid-column: 1 / span 2;
-    justify-content: space-around;
+.titre{
+    grid-row: 1;
+    grid-column: 2 / span 3;
+}
+
+h2{
+    text-align: center;
+    font-size: 50px;
+}
+
+h3{
+    font-size:  20px;
+    text-align: center;
+    padding: 15px;
+}
+
+
+.fleche img {
+    width: 100%;
 }
 
 .informations {
     grid-column: 2;
     /* Positionne les informations dans la deuxième colonne de la sous-grille */
     justify-self: start;
-    /* Aligne les informations à gauche */
-    /* Réinitialise la marge à gauche des informations */
-    margin-bottom: 0%;
-    margin-left: 10%;
 }
 
-.profil img {
-    width: 80%; /* Ajuste la largeur de l'image pour s'adapter à la taille maximale du conteneur */
-    margin-left: 30%; /* Ajuste la marge gauche pour décaler l'image vers la droite */
+.photo img {
+    width: 70%;
+    border-radius: 50%;
 }
 
-
+.fleche {
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+}
 
 
 /* Création des paillettes */
@@ -164,26 +93,3 @@ main .profil {
     animation: tomber 5s linear infinite;
     /* Réglez la vitesse et la durée de l'animation selon vos préférences */
 }
-
-
-footer {
-    grid-row: 5;
-    grid-column: 1 / span 2;
-    text-align: center;
-    padding: 0;
-    margin-top: 10px;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-
-footer .ml{
-    text-decoration: none;
-    color: white;
-}
-
-
-
-
