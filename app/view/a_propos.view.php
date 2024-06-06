@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html lang="fr">
-
 <main>
 
     <h1>INFINITÉ</h1>
@@ -40,7 +37,7 @@
     <div class="lienytb">
     <iframe width="100%" height="315" src="https://www.youtube.com/embed/ngMDswitRII" frameborder="0" allowfullscreen></iframe>
     </div>
-</main>
+
 
 <script>
    
@@ -79,3 +76,4 @@
     // Appeler la fonction pour générer les étoiles une fois que la page est chargée
     window.onload = generateStars;
 </script>
+</main>
