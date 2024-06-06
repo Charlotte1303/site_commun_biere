@@ -31,6 +31,7 @@ if (!isset($_SESSION['age_verified']) || $_SESSION['age_verified'] !== true) {
                 <li><a href="nos_bieres.php"><span>Nos bières</span><img src="public/images/pinte.png" /></a></li>
                 <li><a href="brassage.php"><span>Brassage</span><img src="public/images/labo.png" /></a></li>
                 <li><a href="nous_contacter.php"><span>Contact</span><img src="public/images/tel.png" /></a></li>
+                <li><a href="choice_creat_or_connexion.php"><img class="compte" src="public\images\photo_profil.png" alt="Compte"></a></li>
                 <li><a href="panier_nouveau.php"><img class="panier" src="public/images/Panier_logo.png" alt="Panier"></a></li>
             </ul>
         </nav>

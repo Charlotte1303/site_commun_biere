@@ -25,7 +25,8 @@ header img {
     display: none;
 }
 
-.menu .panier{
+.menu .panier,
+.menu .compte {
     display: block !important;
     width: 45%;
 }
@@ -43,7 +44,7 @@ header img {
 
 .menu ul li {
     margin-right: 3%;
-    font-size: 1.2em;
+    font-size: 20px;
     transition: transform 0.3s ease;
 
 }
@@ -55,7 +56,9 @@ header img {
 .menu ul li a {
     text-decoration: none;
     color: white;
-    text-align: end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 header .logo {
@@ -71,6 +74,7 @@ footer {
     margin-top: 10px;
     text-align: center;
     background-color: black;
+    align-items: center;
 }
 
 .ml {

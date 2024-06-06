@@ -1,0 +1,93 @@
+.form-wrapper {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+
+
+/* Style des éléments du formulaire */
+
+h2 {
+    margin-top: 0;
+    text-align: center;
+    font-style: normal;
+    font-size: 250%;
+
+}   
+
+p {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    color:white;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #353635;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #353635;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+}
+
+/* Responsiveness */
+@media (max-width: 600px) {
+    .form-wrapper {
+        padding: 15px;
+    }
+
+    input[type="text"], input[type="email"], input[type="password"] {
+        padding: 8px;
+    }
+
+    input[type="submit"] {
+        padding: 8px;
+    }
+}
+
+
+
+/***************************************************************/
+button{
+
+    margin-left: 34%;
+    background-color: #353635;
+    border-radius: 4px;
+
+}
+/*******************************************

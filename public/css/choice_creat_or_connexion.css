@@ -1,0 +1,121 @@
+
+p {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    color:white;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #353635;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #353635;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Responsiveness */
+@media (max-width: 600px) {
+    .form-wrapper {
+        padding: 15px;
+    }
+
+    input[type="text"], input[type="email"], input[type="password"] {
+        padding: 8px;
+    }
+
+    input[type="submit"] {
+        padding: 8px;
+    }
+}
+
+
+
+/***************************************************************/
+button{
+
+    margin-left: 34%;
+    background-color: #353635;
+    border-radius: 4px;
+
+}
+/*******************************************/
+
+
+
+/*.choice{
+    /*margin: auto;
+    /*justify-content: center;
+    /*position: relative;
+    justify-content: center;
+    /*display: flex;
+    
+
+    
+
+    
+}*/
+
+/* page choice ***************************/
+
+/* Container principal pour centrer le formulaire */
+
+
+
+/* bouton aligné*/
+
+.bouton-align{
+    display:inline-block;
+    width: 25%;
+    
+    margin: 10px 2.5% 10px 2.5%;
+    text-align:center;
+    /*border:solid white 10%;*/
+}
+/* bouton aligné*/
+
+/*h2 {
+    /*margin-top: 0;
+    text-align: center;
+    font-style: normal;
+    font-size: 250%;
+    /*text-align: center;
+    margin-left: 25%;
+
+} */
+
+/* page choice ***************************/
+
+
+

@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "db_compte_utilisateur";
+$dbname = "infinite";
 
 // Créer la connexion
 $conn = new mysqli($servername, $username, $password, $dbname);
