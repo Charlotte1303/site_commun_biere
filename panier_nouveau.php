@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // Débogage
     echo "Total calculé : " . $total . "€";
-    
+
     // Rediriger vers la page de confirmation
     header("Location: confirmation_panier.php?total=$total");
     exit;
