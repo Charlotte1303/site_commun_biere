@@ -83,29 +83,7 @@ h3 {
 }
 
 /* Media Queries pour les écrans plus petits */
-@media (max-width: 1200px) {
-    main {
-        grid-template-columns: 10% 1fr;
-        grid-template-rows: auto auto 1fr;
-    }
-    .titre {
-        grid-column: 1 / span 2;
-    }
-    .photo {
-        grid-column: 1 / span 2;
-        justify-self: center;
-    }
-    .texte {
-        grid-column: 1 / span 2;
-    }
-    .fleche {
-        grid-column: 1 / span 2;
-        max-width: 15%;
-    }
-    .informations {
-        grid-column: 1 / span 2;
-    }
-}
+
 
 @media (max-width: 768px) {
     main {
@@ -126,9 +104,19 @@ h3 {
     }
     .fleche {
         grid-column: 1;
+        max-width: 15%;
     }
     .informations {
         grid-column: 1;
+    }
+    h2 {
+        font-size: larger;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    .photo img {
+        width: 100%;
     }
 }
 
