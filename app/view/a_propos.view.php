@@ -38,7 +38,7 @@
     <iframe width="100%" height="315" src="https://www.youtube.com/embed/ngMDswitRII" frameborder="0" allowfullscreen></iframe>
     </div>
 
-
+    </main>
 <script>
    
         // Obtenir la hauteur de la fenêtre du navigateur
@@ -76,4 +76,3 @@
     // Appeler la fonction pour générer les étoiles une fois que la page est chargée
     window.onload = generateStars;
 </script>
-</main>
