@@ -1,7 +1,7 @@
 <?php
 //1 Données
 $title = "confirmation_panier";
-$css = "confirmation_panier.css";
+$csspage = "confirmation_panier.css";
 $cssheaderfooter = "headerfooter.css";
 require_once 'app/model/connexionBDD.php';
 

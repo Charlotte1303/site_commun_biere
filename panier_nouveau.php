@@ -6,7 +6,7 @@ error_reporting(E_ALL);
 
 // 1 Données
 $title = "panier_nouveau";
-$css = "panier_nouveau.css";
+$csspage = "panier_nouveau.css";
 $cssheaderfooter = "headerfooter.css";
 require_once 'app/model/connexionBDD.php';
 
