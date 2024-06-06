@@ -1,0 +1,25 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    padding: 20px;
+    border: 2px solid #333;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+}
+
+.content h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 1.2em;
+}
